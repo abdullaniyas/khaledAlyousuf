@@ -1,0 +1,192 @@
+/* 
+    Document   : login
+    Created on : 24 Jan, 2015, 10:24:53 AM
+    Author     : personal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.login-page {
+    float: left;
+    height: auto;
+    min-height: 400px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 990px;
+    background-image: url(../images/blur.jpg);
+    background-size: 100% auto;
+    background-position: 0 0;
+}
+.sign-in-container {
+    margin: 60px auto 0;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255,255,255,0.45);
+}
+.sign-in-container > h2{
+    color: #0b506c;
+    float: left;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 20px 0 0 33px;
+}
+.sign-in-container form {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+    min-height: 70px;
+    position: relative;
+    margin-left: 60px;
+}
+.input-sign {
+    background-color: #7b745f;
+    border: 1px solid #676350;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.42) inset;
+    color: #fff;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+.sign-in-container .input-sign {
+    width: 250px;
+}
+.sign-in-container button {
+    background-color: #0B506C;
+    color: #fff;
+    margin-top: 13px;
+    border: medium none;
+    border-radius: 5px;
+    height: 33px;
+    width: 150px;
+
+}
+.sign-in-container form a {
+    color: #005ce6;
+    float: right;
+    font-size: 12px;
+    margin-right: 38px;
+    margin-top: 13px;
+    text-decoration: none;
+}
+.login-or {
+    border-bottom: 1px solid #fff;
+    float: left;
+    height: 25px;
+    margin: 10px auto 7px 120px;
+    width: 160px;
+}
+.login-or p {
+    padding: 5px;
+    background-color: #fff;
+    color: #2a2a2a;
+    text-align: center;
+    margin-top: 13px;
+    border-radius: 50%;
+    float: left;
+    font-size: 11px;
+    margin-left: 70px;
+}
+.social-login {
+    float: left;
+    height: 38px;
+    margin-left: 40px;
+    margin-top: 24px;
+    width: 320px;
+}
+
+.social-login a {
+    background-position: 0 0;
+    background-size: 100% auto;
+    float: left;
+    height: 30px;
+    width: 155px;
+    border-radius: 3px;
+}
+.social-login .fb-login {
+    background-image: url(../images/icons/sign-in-with-facebook.png);
+}
+.social-login .google-login {
+    margin-left: 10px;
+    background-image: url(../images/icons/sign-in-with-google.png);
+}
+.sign-in-container > p {
+    float: left;
+    color: #2a2a2a;
+    font-size: 13px;
+    margin-left: 123px;
+}
+
+.sign-in-container > p > a {
+    color: #00ACDC;
+}
+
+.sign-in-logo {
+    width: 300px;
+    height: 82px;
+    margin: 22px auto;
+    background-image: url(../images/logo.png);
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+
+
+.register-account  {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.new-user {
+    float: left;
+    margin: 30px 0 50px 100px;
+}
+
+.new-user  h2 {
+    color: #0b506c;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 30px 0 0 10px;
+}
+.new-user  h5 {
+    color: #3a3a3a;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 0 10px 10px;
+}
+.new-user  form {
+    width: 450px;
+    margin-left:40px;
+}
+.new-user  form label {
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.new-user  form .input-sign {
+    width: 200px;
+}
+.new-user  form select {
+    width: 200px;
+}
+.new-user  form  p {
+    color: #3a3a3a;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 14px 0 0 0px;
+}
+.new-user  form  p a {
+    color: #0B506C;
+    text-decoration: none;
+}
+.new-user  form  button {
+    background-color: #0b506c;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    height: 33px;
+    margin-top: 13px;
+    width: 150px;
+}
