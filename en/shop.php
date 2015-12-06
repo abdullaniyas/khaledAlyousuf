@@ -8,7 +8,7 @@ and open the template in the editor.
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="../css/teemstore.css" />
+        <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
         <!--        <link rel="stylesheet" type="text/css" href="../css/style.css" />
                  Slider 
                 <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>-->
@@ -19,10 +19,10 @@ and open the template in the editor.
     <body>
 
         <!-- Header -->
-        <?php include '../components/header.php'; ?>
+        <?php include 'header.php'; ?>
 
         <section class="margin-extra height-500">
-            <div class="full-width pull-left height-400 shop-banner">
+<!--            <div class="full-width pull-left height-400 shop-banner">
                 <div class="width-860 center-div">
                     <div class="width-33 pull-left">
                         <div class="shopban-con">
@@ -108,7 +108,7 @@ and open the template in the editor.
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
             
             <div class="full-width pull-left">
                 <div class="width-1100 center-div">
@@ -117,34 +117,26 @@ and open the template in the editor.
                         <div class="width-25 pull-left">
                             <div class="width-80 center-div shop-item">
                                 <div class="item-pic full-width pull-left">
-                                    <img src="../images/1.jpg" alt="Product" />
-                                    <a href="#" class="item-view full-width">
+                                    <img src="../images/products/mobile1.png" alt="Product" />
+                                    <a href="product.php" class="item-view full-width">
                                         <div><span>VIEW</span></div>
                                     </a>
                                 </div>
                                 <div class="shop-detail full-width pull-left">
                                     <h1>Black Color long Sleev</h1>
-                                    <h4>Rs 550</h4>
-                                    <div class="color-size">
-                                        <h5>XL</h5><h6>XXL</h6><span class="color1"></span><span class="color2"></span><span class="color3"></span><span class="color4"></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="width-25 pull-left">
                             <div class="width-80 center-div shop-item">
                                 <div class="item-pic full-width pull-left">
-                                    <img src="../images/1.jpg" alt="Product" />
-                                    <a href="#" class="item-view full-width">
+                                    <img src="../images/products/caraccess.png" alt="Product" />
+                                    <a href="product.php" class="item-view full-width">
                                         <div><span>VIEW</span></div>
                                     </a>
                                 </div>
                                 <div class="shop-detail full-width pull-left">
                                     <h1>Black Color long Sleev</h1>
-                                    <h4>Rs 550</h4>
-                                    <div class="color-size">
-                                        <h5>XL</h5><h6>XXL</h6><span class="color1"></span><span class="color2"></span><span class="color3"></span><span class="color4"></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -157,13 +149,13 @@ and open the template in the editor.
 
         <!-- Footer -->
 
-        <?php include '../components/footer.php'; ?>
+        <?php include 'footer.php'; ?>
 
 
 
 <!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="../js/teemstore.js"></script>
+        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../script/alyousuf.js"></script>
 <!--        <script type="text/javascript" src="../js/jquery.jcarousellite.js"></script>
         <script type="text/javascript" src="../js/wowslider.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>-->

@@ -163,11 +163,7 @@ header {
     background-color: transparent;
 }
 .brand-name {
-<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.5);
-=======
-    background-color: rgba(255, 255, 255, 0.6);
->>>>>>> 945ad3484b18ffaf2911e29ffd506de83b1dcbfa
     height: 121px;
     left: 91px;
     color: #ccc;
@@ -193,7 +189,6 @@ header {
     margin-right: 4px;
     text-align: right;
 }
-<<<<<<< HEAD
 .brand4 {
     position: absolute;
     font-size: 15px;
@@ -201,8 +196,6 @@ header {
     right: 0;
     top: 10px;
 }
-=======
->>>>>>> 945ad3484b18ffaf2911e29ffd506de83b1dcbfa
 .address {
     background-color: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -220,11 +213,7 @@ header {
 }
 .contact-map {
     position: relative;
-<<<<<<< HEAD
-    height: 300px;
-=======
     height: 700px;
->>>>>>> 945ad3484b18ffaf2911e29ffd506de83b1dcbfa
 }
 .google-maps {
     height: 100%;

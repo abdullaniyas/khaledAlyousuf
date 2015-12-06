@@ -8,7 +8,7 @@ and open the template in the editor.
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="../css/teemstore.css" />
+        <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
         <!--        <link rel="stylesheet" type="text/css" href="../css/style.css" />
                  Slider 
                 <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>-->
@@ -19,7 +19,7 @@ and open the template in the editor.
     <body>
 
         <!-- Header -->
-        <?php include '../components/header.php'; ?>
+        <?php include 'header.php'; ?>
 
         <section class="margin-extra">
 
@@ -28,19 +28,17 @@ and open the template in the editor.
                     <div class="width-50 pull-left height-500">
                         <div class="custom-container widget">
                             <div class="mid">
-                                <img alt="1" src="../images/3.jpg">
+                                <img alt="1" src="../images/products/caraccess.png">
                             </div>
                             <a href="#" class="prev">&lsaquo;</a>
                             <div class="carousel carousel-prod">
                                 <ul>
-                                    <li><img src="../images/1.jpg"></li>
-                                    <li><img src="../images/2.jpg"></li>
-                                    <li><img src="../images/3.jpg"></li>
-                                    <li><img src="../images/4.jpg"></li>
-                                    <li><img src="../images/1.jpg"></li>
-                                    <li><img src="../images/2.jpg"></li>
-                                    <li><img src="../images/3.jpg"></li>
-                                    <li><img src="../images/4.jpg"></li>
+                                    <li><img src="../images/products/caraccess.png"></li>
+                                    <li><img src="../images/products/mobile1.png"></li>
+                                    <li><img src="../images/products/caraccess.png"></li>
+                                    <li><img src="../images/products/stationaries.png"></li>
+                                    <li><img src="../images/products/mobile1.png"></li>
+                                    <li><img src="../images/products/stationaries.png"></li>
                                 </ul>
                             </div>
                             <a href="#" class="next">&rsaquo;</a>
@@ -108,9 +106,9 @@ and open the template in the editor.
                                         <td>
                                             <p></p>
                                         </td>
-                                        <td>
+<!--                                        <td>
                                             <button>Shop Now</button> 
-                                        </td>
+                                        </td>-->
                                     </tr>
                                 </table>
                             </form>
@@ -135,12 +133,12 @@ and open the template in the editor.
                         <a href="#" class="prev1 prev">&lsaquo;</a>
                         <div class="carousel carousel1">
                             <ul>
-                                <li><a href="#"><img src="../images/1.jpg"><h2> 1 Designer T-shirt Designer T-shirt Designer T-shirt Designer T-shirt 2</h2><h4>Rs : <span>499</span></h4></a></li>
-                                <li><a href="#"><img src="../images/2.jpg"><h2>Designer T-shirt</h2><h4>Rs : <span>499</span></h4></a></li>
-                                <li><a href="#"><img src="../images/3.jpg"><h2>Designer T-shirt</h2><h4>Rs : <span>499</span></h4></a></li>
-                                <li><a href="#"><img src="../images/4.jpg"><h2>Designer T-shirt</h2><h4>Rs : <span>499</span></h4></a></li>
-                                <li><a href="#"><img src="../images/5.jpg"><h2>Designer T-shirt</h2><h4>Rs : <span>499</span></h4></a></li>
-                                <li><a href="#"><img src="../images/6.jpg"><h2>Designer T-shirt</h2><h4>Rs : <span>499</span></h4></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
                             </ul>
                         </div>
                         <a href="#" class="next1 next">&rsaquo;</a>
@@ -152,17 +150,17 @@ and open the template in the editor.
 
         <!-- Footer -->
 
-        <?php include '../components/footer.php'; ?>
+        <?php include 'footer.php'; ?>
 
 
 
 <!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="../js/teemstore.js"></script>
-        <script type="text/javascript" src="../js/jquery.jcarousellite.js"></script>
+        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../script/alyousuf.js"></script>
+        <script type="text/javascript" src="../script/jquery.jcarousellite.js"></script>
        <!-- <script type="text/javascript" src="../js/wowslider.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>-->
-        <script type="text/javascript" src="../js/product.js"></script>
+        <script type="text/javascript" src="../script/product.js"></script>
         <script type="text/javascript">
 
         </script>
