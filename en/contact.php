@@ -52,8 +52,11 @@ and open the template in the editor.
 
 
 <!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        
         <script src="../script/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="../script/alyousuf.js"></script>
         <script language="javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&v=3"></script>
+        <script type="text/javascript" src="../script/alyousuf.js"></script>
+        <script type="text/javascript" src="../script/main.js"></script>
+        
     </body>
 </html>
