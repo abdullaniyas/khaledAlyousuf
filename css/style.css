@@ -153,8 +153,10 @@ body {
     background-position: 100% 100% !important;
 }/* bottom center */
 #wowslider-container1  .ws_bullets {
-    left: 10%;
-    top: 332px;
+    left: 45%;
+    top: 450px;
+/*    left: 10%;
+    top: 332px;*/
 }
 #wowslider-container1  .ws_bullets div{
 	left:0%;
@@ -228,6 +230,9 @@ body {
 	left:64px;
 	width:15px;
 	height:6px;
+}
+.ws-title {
+    display: none !important;
 }
 .ws-title div {
     width: 80%;

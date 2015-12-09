@@ -1,4 +1,5 @@
-<footer class="brand-color1">
+<footer class="brand-color1 brand-strip">
+    <div class="globe"></div>
     <div class="footer-categories">
         <div class="width-23 pull-left offset-1">
             <div>
@@ -40,6 +41,7 @@
                 </ul>
             </div>
         </div>
+        
     </div>
     
 </footer>

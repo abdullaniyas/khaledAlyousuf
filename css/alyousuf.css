@@ -14,6 +14,9 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+.brand-color1 {background-color: #111;}
+.brand-color2 {background-color:#D9B13B;}
+.brand-strip { border-top: 5px solid #D9B13B;}
 .red {background-color: red;}
 .black {background-color: #0A0303;}
 .blue {background-color: #005ce6;}
@@ -26,8 +29,7 @@ body {
 .white {background-color: #FFF;}
 .yellow {background-color: yellow;}
 .background-color {background-color: #292929;}
-.brand-color1 {background-color: #204473;}
-.brand-color2 {background-color:#D9B13B;}
+
 .border-col {
     border: 1px solid #005ce6;
 }
@@ -288,9 +290,6 @@ header {
     margin: 0 auto;
 }
 .logo {
-    background-image: url("../images/logo.jpg");
-    background-position: center center;
-    background-size: 100% auto;
     height: 100%;
     margin: 0 0 0 5%;
     width: auto;
@@ -702,16 +701,20 @@ section {
 .upload-container .events button {
     background-color: rgba(0, 128, 0, 0.3);
 }
+/* Footer */
 footer {
     float: left;
     position: relative;
     width: 100%;
     height: 230px;
     border-top: 5px solid #D9B13B;
+    overflow: hidden;
 }
 .footer-categories {
     width: 1024px;
     margin: 0 auto;
+    z-index: 99;
+    position: relative;
 }
 footer div div div {
     height: 70px;
@@ -773,8 +776,27 @@ footer ul li a {
     text-align: center;
     color: #D9B13B;
     font-size: 14px;
+    z-index: 10;
+    position: relative;
 }
-
+.globe {
+    background-image: url(" ../images/icons/globe.png");
+    height: 745px;
+    left: 50%;
+    margin-left: -372.5px;
+    margin-top: -372.5px;;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 745px;
+    z-index: 0;
+    -webkit-animation:spin 100s linear infinite;
+    -moz-animation:spin 100s linear infinite;
+    animation:spin 100s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 /* Add to Cart Page starts */
 
 .bread-crums h1 {
