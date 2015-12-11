@@ -30,14 +30,13 @@ and open the template in the editor.
                     <div class="address-contact">
                         <h5>Address</h5>
                         <ul>
-                            <li>Shop No. 04, Silver Building</li>
-                            <li>Ajman, UAE - 7774</li>
-                                
+                            <li>Maryam Tower, Room No 203,</li>
+                            <li>Near Golden Coffee Shop,</li>
+                            <li>Nuimia, Ajman, UAE - 7774</li>  
                         </ul>
                         <h5>Phone</h5>
                             <ul>
                                 <li>067438427</li>
-                                <li></li>
                             </ul>
                     </div>
                 </div>

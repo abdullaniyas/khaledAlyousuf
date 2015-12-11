@@ -12,11 +12,6 @@ $(document).ready(function(){
         'height': +x+"px"
     });
     
-    /* On sign in show msg */
-    $('.sign-inup').click(function(){
-        $('.sign-inup').hide();
-        $('.signin-msg').show();
-    });
     
     /* Tabs */
 //    $('.nav-items').on('click',function(){
@@ -128,7 +123,15 @@ $(window).scroll(function () {
     //alert('hello');
     $('.main-slider').css({
         'top' : +($(this).scrollTop()/1.5)+"px"
-    }); 
+    });
+    
+//    var screenHeight = $(window).height();
+//    if (screenHeight > 400){
+//        $(".main-header").addClass('main-header-anime');
+//    } else if (screenHeight < 401) {
+//        $(".main-header").removeClass('main-header-anime');
+//    }
+    
     
 }); 
 

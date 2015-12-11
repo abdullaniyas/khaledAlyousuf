@@ -80,7 +80,7 @@ and open the template in the editor.
             <div class="section-home panels">
                 <div class="categories " >
                     <div class="title-head margin-top-20 pull-left full-width">
-                        <h3>Stationary Items</h3><span><a href="#">view all</a></span>
+                        <h3>Stationary Items<span><a href="#">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
@@ -110,7 +110,7 @@ and open the template in the editor.
             <div class="section-home panels">
                 <div class="categories " >
                     <div class="title-head pull-left full-width">
-                        <h3>Car Accessories</h3><span><a href="#">view all</a></span>
+                        <h3>Car Accessories<span><a href="#">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
@@ -141,7 +141,7 @@ and open the template in the editor.
             <div class="section-home panels">
                 <div class="categories " >
                     <div class="title-head pull-left full-width">
-                        <h3>Mobile Accessories</h3><span><a href="#">view all</a></span>
+                        <h3>Mobile Accessories<span><a href="#">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
@@ -171,37 +171,37 @@ and open the template in the editor.
                 </a>
             </div>-->
             <div class="section-home panels">
-                <div class="best-seller margin-bottom-20 pull-left full-width">
-                    <div class="title-head margin-top-20 pull-left full-width">
-                        <h3>Best Seller</h3><span><a href="#">view all</a></span>
+                <div class="best-seller margin-bottom-65 pull-left full-width">
+                    <div class="title-head pull-left full-width">
+                        <h3>Best Seller<span><a href="#">view all</a></span></h3>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-300 offset-1">
-                        <a href="product.php" class="height-300 full-width pull-left">
+                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                        <a href="product.php" class="height-270 full-width pull-left">
                             <img src="../images/products/mobile1.png">
                             <h2>Mobile Cover</h2>
 <!--                            <h4>Rs : <span>499</span></h4>-->
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-300 offset-1">
-                        <a href="#" class="height-300 full-width pull-left">
+                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                        <a href="#" class="height-270 full-width pull-left">
                             <img src="../images/products/caraccess.png">
                             <h2>Wheel Cap</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-300 offset-1">
-                        <a href="product.php" class="height-300 full-width pull-left">
+                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                        <a href="product.php" class="height-270 full-width pull-left">
                             <img src="../images/products/mobile1.png">
                             <h2>Mobile Cover</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-300 offset-1">
-                        <a href="product.php" class="height-300 full-width pull-left">
+                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                        <a href="product.php" class="height-270 full-width pull-left">
                             <img src="../images/products/stationaries.png">
                             <h2>Books</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-300 offset-1">
-                        <a href="product.php" class="height-300 full-width pull-left">
+                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                        <a href="product.php" class="height-270 full-width pull-left">
                             <img src="../images/products/caraccess.png">
                             <h2>Wheel Cap</h2>
                         </a>

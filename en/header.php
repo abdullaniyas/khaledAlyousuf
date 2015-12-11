@@ -4,6 +4,9 @@
             <div class="logo pull-left">
                 <img src="../images/logo.png" alt="logo" />
             </div>
+            <div class="pull-right language">
+                <h6><a href="../en/">English</a>&nbsp;|&nbsp;<a href="#">Arabic</a></h6>
+            </div>
         </div>    
     </div>
     <div class="sub-header full-width pull-left">
@@ -14,7 +17,7 @@
                 <li class="nav-items nav-shop"><a href="shop.php">Car Accessories</a></li>
                 <li class="nav-items nav-design"><a href="shop.php">Mobile Accessories</a></li>
                 <li class="nav-items nav-gallery"><a href="oil.php">Oil</a></li>
-                <li class="nav-items nav-getintouch"><a href="#">About Us</a></li>
+                <li class="nav-items nav-getintouch"><a href="about.php">About Us</a></li>
                 <li class="nav-items nav-contact"><a href="contact.php">Contact Us</a></li>
             </ul>
         </nav>

@@ -13,10 +13,10 @@
             <div class="border-left">
                 <ul>
                     <li><p>INFORMATION</p></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="policy.php">Policy</a></li>
+                    <li><a href="terms-and-conditions.php">Terms and conditions</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
                 </ul>
             </div>
         </div>

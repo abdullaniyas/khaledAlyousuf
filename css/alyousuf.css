@@ -14,7 +14,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-.brand-color1 {background-color: #111;}
+.brand-color1 {background-color: #000;}
 .brand-color2 {background-color:#D9B13B;}
 .brand-strip { border-top: 5px solid #D9B13B;}
 .red {background-color: red;}
@@ -23,7 +23,7 @@ body {
 .cream {background-color: #F3F3F3;}
 .white {background-color: #fff;}
 .green {background-color: green;}
-.grey {background-color: #212121;}
+.grey {background-color: #111;}
 
 .silver {background-color: #D9EFFC;}
 .white {background-color: #FFF;}
@@ -214,6 +214,9 @@ a {
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
+.margin-bottom-65 {
+    margin-bottom: 65px;
+}
 .height-100 {
     height: auto;
     min-height: 100px;
@@ -225,6 +228,10 @@ a {
 .height-200 {
     height: auto;
     min-height: 180px;
+}
+.height-270 {
+    height: auto;
+    min-height: 270px;
 }
 .height-300 {
     height: auto;
@@ -301,6 +308,21 @@ header {
     width: auto;
     position: absolute;
     
+}
+.language {
+    position: absolute;
+    right: 15%;
+    color: #D9B13B;
+    top: 0;
+}
+.language h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.language h6 a {
+    text-decoration: none;
 }
 .header-menu {
     background-position: center 11px;
@@ -448,10 +470,10 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li:hover {
-    color:#204473;
+    color:#2a2a2a;
 }
 .nav-selected {
-    color: #204473;
+    color: #2a2a2a;
 }
 .best-seller-product{
     border: 1px solid #C1CBD9;
@@ -459,6 +481,7 @@ nav ul li:hover {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    background-color: #fff;
 }
 .best-seller-product:hover{
     border: 1px solid #0B506C;
@@ -470,7 +493,7 @@ nav ul li:hover {
 .best-seller-product a h2 {
     font-size: 16px;
     font-weight: 400;
-    color: #0B506C;
+    color: #2a2a2a;
     text-align: center;
     margin: 5px auto 0;
     height: auto;
@@ -490,14 +513,13 @@ nav ul li:hover {
     color: #B03D22;
 }
 .title-head h3 {
-    float: left;
+    text-align: center;
     color: #2a2a2a;
-    font-size: 30px;
+    font-size: 39px;
     font-weight: 400;
-    margin: 10px;
+    margin: 25px auto 20px;
 }
 .title-head span {
-    float: left;
     color: #2a2a2a;
     font-size: 15px;
     font-weight: 400;
@@ -520,6 +542,8 @@ section {
     width: 100%;
     height: auto;
     z-index: 95;
+    background-image: url(../images/icons/images1.jpg);
+    background-repeat: repeat;
     background-color: #fff;
 }
 .panels {
@@ -535,7 +559,7 @@ section {
     float: left;
     height: auto;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
 }
 .slider-tab {
     margin: 50px auto 0;
@@ -555,11 +579,12 @@ section {
     margin-left: 5px;
     margin-right: 5px;
     height: 290px;
-    border: 1px solid #ECD89D;
+    border: 1px solid #7a7a7a;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    background-color: #fff;
 }
 .slider-tab .carousel>ul>li:hover {
     border: 1px solid #DAB13B;
@@ -576,7 +601,7 @@ section {
 .slider-tab .carousel>ul>li>a h2 {
     font-size: 16px;
     font-weight: 400;
-    color: #204474;
+    color: #2a2a2a;
     text-align: center;
     margin: 5px auto 0;
     height: auto;
@@ -1849,11 +1874,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     overflow: hidden;
     width: 100%;
 }
-.shop-banner {
-    background-image: url(../images/blur.jpg);
-    background-position: center center;
-    background-size: 100% auto;
-}
+
 .shopban-con {
     background-color: red;
     border-radius: 50%;
@@ -1891,7 +1912,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     width: 100px;
 }
 .shop-item {
-
+    background-color: #fff;
 }
 .item-pic {
     position: relative;
@@ -1899,7 +1920,8 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     text-decoration: none;
     color: #2a2a2a;
     border: 1px solid rgba(28, 80, 93, 0.3);
-    height: 260px;
+    height: 220px;
+    background-color: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -1925,6 +1947,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 .shop-detail  h1  {
     font-size: 14px;
     margin: 10px auto 0;
+    color: #3a3a3a;
 }
 .shop-detail h4 {
     font-size: 16px;
@@ -2366,26 +2389,31 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 }
 
 /* About */
-.about-banner {
-    background-image: url(../images/blur.jpg);
-    background-position: center center;
-    background-size: 100% auto;
+.about-banner h2 {
+    color: #3a3a3a;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 auto 30px;
+    text-align: center;
 }
 .about-banner > div {
-    margin-top: 80px;
+    margin-top: 50px;
+    width: 900px;
 }
 .about-banner div p {
-    color: #fff;
+    color: #5a5a5a;
     font-size: 16px;
     text-align: center;
     font-weight: 600;
+    padding: 0 10px;
 }
+
 .about-banner div p span {
-    color: #DF043C;
+    color: #D9B13B;
     font-size: 35px;
 }
 .about-border {
-    background-color: #DF043C;
+    background-color: #D9B13B;
     height: 2.5px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -2395,102 +2423,78 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     background-color: #E2DFBC;
 }
 .about-team div h1 {
-    color: #de033d;
+    color: #3a3a3a;
     font-size: 36px;
     font-weight: 600;
-    margin: 23px auto 30px;
+    margin: 0 auto 30px;
     text-align: center;
-    text-transform: uppercase;
 }
-.team-profile {
-    border-radius: 50%;
-    float: left;
-    height: 130px;
-    margin: 25px 69px;
-    width: 130px;
-    cursor: pointer;
-    position: relative;
-}
-
-.team-profile img {
-    width: 100%;
+.sponsor {
+    width: 500px;
     height: auto;
-    border-radius: 50%;
-    border: 2px solid #fff;
+    margin: 0 auto;
 }
-.team-profile img:hover {
-    border: 2px solid #DF063B;
+.sponsor img {
+    width: 70%;
+    margin: 0 15% 0 14%;
+    border: 5px solid #D9B13B;
 }
-.profile-details {
-    background-color: #0ed59c;
-    border-radius: 10px;
-    bottom: 69%;
-    height: 73px;
-    position: absolute;
-    width: 163px;
-}
-.prof-left {
-    left: 63%;
-}
-.prof-right {
-    right: 63%;
-}
-.profile-details h3 {
-    color: #fff;
-    font-size: 21px;
+.sponsor h3 {
+    color: #3a3a3a;
+    font-size: 26px;
     font-weight: 600;
-    margin: 7px auto 0 17px;
+    margin: 0 auto 0px;
+    text-align: center;
 }
-.profile-details p {
-    color: #fff;
+.sponsor p {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.team-members-cont {
+    margin-top: 50px;
+}
+.team-members {
+    float: left;
+    width: 33.3333%;
+}
+.team-members img {
+    width: 80%;
+    margin: 0 10% 0 9%;
+    border: 5px solid #D9B13B;
+}
+.team-members h3 {
+    color: #3a3a3a;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 auto 0px;
+    text-align: center;
+}
+.team-members h5 {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto 0;
+    text-align: center;
+}
+.team-members p {
+    color: #7a7a7a;
     font-size: 15px;
-    font-weight: 600;
-    margin: 3px auto 0 17px;
-}
-.team-profile:hover > .profile-details {
-    display: block !important;
-}
-.about-valmiss {
-    background-image: url(../images/blur.jpg);
-    background-position: center center;
-    background-size: 100% auto;
-}
-.valmiss-header {
-    height: auto;
-}
-.valmiss-header div h2 {
-    color: #fff;
-    font-size: 42px;
-    font-weight: 600;
-    margin: 3px auto;
+    font-weight: 500;
+    margin: 0 auto 30px;
     text-align: center;
 }
-.valmiss-body {
-    margin-bottom: 27px;
+.shop-certicate {
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
-.valmiss-cont {
-    border: 1px solid #de033d;
-    border-radius: 50%;
-    float: left;
-    height: 250px;
-    margin: 30px 78px;
-    width: 250px;
+.shop-certicate img {
+    width: 100%;
+    margin-top: 20px;
+    border: 7px solid #D9B13B;
 }
-.valmiss-cont p {
-    color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 72px auto;
-    text-align: center;
-    width: 84%;
-}
-.center-line {
-    background-color: #de033d;
-    height: 174px;
-    margin: 71px auto 0;
-    width: 3px;
-}
-
 /* Contact us */
 .contact-map {
     position: relative;

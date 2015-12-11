@@ -59,7 +59,7 @@ function initialize() {
     map = new google.maps.Map(document.getElementById("map"), mapProp);
 
     marker = new google.maps.Marker({
-        position: new google.maps.LatLng(25.395187, 55.466800),
+        position: new google.maps.LatLng(25.387741, 55.458906),
         animation: google.maps.Animation.DROP,
         mapTypeControl: false
     });

@@ -8,7 +8,7 @@ and open the template in the editor.
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="../css/teemstore.css" />
+        <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
         <!--        <link rel="stylesheet" type="text/css" href="../css/style.css" />
                  Slider 
                 <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>-->
@@ -19,73 +19,56 @@ and open the template in the editor.
     <body>
 
         <!-- Header -->
-        <?php include '../components/header.php'; ?>
+        <?php include 'header.php'; ?>
 
         <section class="margin-extra height-400">
             <div class="full-width pull-left height-400 about-banner">
-                <div class="width-700 center-div">
+                <div class="center-div">
+                    <h2>About Us</h2>
                     <div class="width-70 center-div about-border"></div>
                     <p><span>L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     <div class="width-70 center-div about-border"></div>
                 </div>
             </div>
-            <div class="full-width pull-left about-cream">
-                
+            <div class="full-width pull-left about-team">
+                <div class="width-550 center-div margin-top-20">
+                    <h1>Our Sponsor</h1>
+                    <div class="sponsor">
+                        <img src="../images/about/srk.jpg" alt="Sponosor" />
+                        <h3>Lorem Ipsum Lorem</h3>
+                        <p>Lorem Ipsum Lorem Lorem Ipsum Lorem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="full-width pull-left about-team team-members-cont">
+                <div class="width-1100 center-div">
+                    <h1>Our Team</h1>
+                    <div class="full-width pull-left ">
+                        <div class="team-members">
+                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <h3>Musthafa</h3>
+                            <h5>Managing director</h5>
+                            <p>musthafa@khaledalyouf.com</p>
+                        </div>
+                        <div class="team-members">
+                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <h3>Salam</h3>
+                            <h5>Managing Partner</h5>
+                            <p>salam@khaledalyouf.com</p>
+                        </div>
+                        <div class="team-members">
+                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem Ipsum Lorem Lorem Ipsum Lorem</h5>
+                            <p>xyzxyz@khaledalyouf.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="full-width pull-left about-team">
-                <div class="width-550 center-div">
-                    <h1>Meet Our Team</h1>
-                    <div class="full-width pull-left height-400">
-                        <div class="team-profile">
-                            <img src="../images/1.jpg" alt="team" />
-                            <div class="profile-details hide prof-left">
-                                <h3>Lorem</h3>
-                                <p>Lorem Ipsum</p>
-                            </div>
-                        </div>
-                        <div class="team-profile">
-                            <img src="../images/1.jpg" alt="team" />
-                            <div class="profile-details hide prof-right">
-                                <h3>Lorem</h3>
-                                <p>Lorem Ipsum</p>
-                            </div>
-                        </div>
-                        <div class="team-profile">
-                            <img src="../images/1.jpg" alt="team" />
-                            <div class="profile-details hide prof-left">
-                                <h3>Lorem</h3>
-                                <p>Lorem Ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-width pull-left about-valmiss height-400">
-                <div class="width-860 center-div">
-                    <div class="full-width pull-left valmiss-header">
-                        <div class="width-50  pull-left"><h2>Our Values</h2></div>
-                         <div class="width-50  pull-left"><h2>Our Mission</h2></div>
-                    </div>
-                </div>
-                <div class="full-width pull-left height-300 black valmiss-body">
-                    <div class="width-860 center-div">
-                        <div class="width-48 pull-left height-300">
-                            <div class="valmiss-cont">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
-                            </div>
-                        </div>
-                        <div class="width-4 pull-left height-300">
-                            <div class="center-line">
-                                
-                            </div>
-                        </div>
-                        <div class="width-48 pull-left height-300">
-                            <div class="valmiss-cont">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="width-700 center-div shop-certicate">
+                    <h1>Our License</h1>
+                    <img src="../images/about/certificate.jpg" alt="Sponosor" />
                 </div>
             </div>
         </section>
@@ -93,13 +76,13 @@ and open the template in the editor.
         
         <!-- Footer -->
 
-        <?php include '../components/footer.php'; ?>
+        <?php include 'footer.php'; ?>
 
 
 
 <!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="../js/teemstore.js"></script>
+        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../script/alyousuf.js"></script>
 <!--        <script type="text/javascript" src="../js/jquery.jcarousellite.js"></script>
         <script type="text/javascript" src="../js/wowslider.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>-->
