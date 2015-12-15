@@ -31,10 +31,10 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="full-width pull-left about-team">
-                <div class="width-550 center-div margin-top-20">
+                <div class="width-700 center-div margin-top-20">
                     <h1>Our Sponsor</h1>
                     <div class="sponsor">
-                        <img src="../images/about/srk.jpg" alt="Sponosor" />
+                        <img src="../images/about/sponsor.jpg" alt="Sponosor" />
                         <h3>Lorem Ipsum Lorem</h3>
                         <p>Lorem Ipsum Lorem Lorem Ipsum Lorem</p>
                     </div>
@@ -45,19 +45,19 @@ and open the template in the editor.
                     <h1>Our Team</h1>
                     <div class="full-width pull-left ">
                         <div class="team-members">
-                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <img src="../images/about/mustafa.jpg" alt="Member" />
                             <h3>Musthafa</h3>
                             <h5>Managing director</h5>
                             <p>musthafa@khaledalyouf.com</p>
                         </div>
                         <div class="team-members">
-                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <img src="../images/about/no-image.jpg" alt="Member" />
                             <h3>Salam</h3>
                             <h5>Managing Partner</h5>
                             <p>salam@khaledalyouf.com</p>
                         </div>
                         <div class="team-members">
-                            <img src="../images/about/srk.jpg" alt="Member" />
+                            <img src="../images/about/no-image.jpg" alt="Member" />
                             <h3>Lorem Ipsum</h3>
                             <h5>Lorem Ipsum Lorem Lorem Ipsum Lorem</h5>
                             <p>xyzxyz@khaledalyouf.com</p>
