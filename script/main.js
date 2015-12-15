@@ -1,10 +1,10 @@
 
 $(document).ready(function () {
     initialize();
-    var screenHeight = $( window ).height();
-    $( ".contact-map" ).css({
-        height: +screenHeight+'px'
-    });
+//    var screenHeight = $( window ).height();
+//    $( ".contact-map" ).css({
+//        height: +screenHeight+'px'
+//    });
 });
 
 

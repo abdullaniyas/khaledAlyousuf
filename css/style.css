@@ -15,7 +15,6 @@ body {
 	margin:0px auto 0px;
 	z-index:90;
 	border:none;
-        background-color: red;
 	text-align:left; /* reset align=center */
 }
 #wowslider-container1 .ws_images ul{

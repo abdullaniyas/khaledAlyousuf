@@ -87,12 +87,12 @@ and open the template in the editor.
                         <a href="#" class="prev1 prev">&lsaquo;</a>
                         <div class="carousel carousel1">
                             <ul>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/stationaries.png"><h2>Books</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/color-pencil.png" alt="Color Pencil" /><h2>Color Pencil</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/eraser2.png" alt="Eraser" /><h2>Eraser</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/color-pencil2.png" alt="Color Pencil" /><h2>Color Pencil</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/pen.png" alt="Color Pencil" /><h2>Pen</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/sharpner3.png" alt="Sharpner" /><h2>Sharpner</h2></a></li>
+                                <li><a href="#"><img src="../images/products/stationary/book.png" alt="Book" /><h2>Book</h2></a></li>
                             </ul>
                         </div>
                         <a href="#" class="next1 next">&rsaquo;</a>
@@ -103,9 +103,6 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="banner banner1 margin-top-20 pull-left full-width">
-                <a href="#" class="height-350 full-width pull-left">
-
-                </a>
             </div>
             <div class="section-home panels">
                 <div class="categories " >
@@ -117,12 +114,12 @@ and open the template in the editor.
                         <a href="#" class="prev2 prev">&lsaquo;</a>
                         <div class="carousel carousel2">
                             <ul>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/caraccess.png"><h2>Wheel Cap</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/headlight.png" alt="headlight" />h2>Headlight</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/headlight2.png" alt="headlight" /><h2>Headlight</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/car-stickers2.png" alt="Car Stickers" /><h2>Car Stickers</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/tyre.png" alt="tyre" /><h2>Tyre</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/car-stickers.png" alt="Car Stickers" /><h2>Car Stickers</h2></a></li>
+                                <li><a href="#"><img src="../images/products/car/wheel-cap.png" alt="Wheel Cap" /><h2>Wheel Cap</h2></a></li>
                             </ul>
                         </div>
                         <a href="#" class="next2 next">&rsaquo;</a>
@@ -133,9 +130,6 @@ and open the template in the editor.
 
             
             <div class="banner banner2 pull-left full-width">
-                <a href="#" class="height-350 full-width pull-left">
-
-                </a>
             </div>
             
             <div class="section-home panels">
@@ -148,13 +142,13 @@ and open the template in the editor.
                         <a href="#" class="prev3 prev">&lsaquo;</a>
                         <div class="carousel carousel3">
                             <ul>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
-                                <li><a href="product.php"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/ear-phones2.png" alt="Mobile Accessories" /><h2>Sony Earphones</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/iphone-6plus.png" alt="Mobile Accessories" /><h2>iPhone 6 Plus</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/headset.png" alt="Mobile Accessories" /><h2>Headset</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/mobile-pouch2.png" alt="Mobile Accessories" /><h2>Mobile Pouch</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/mobile-stand.png" alt="Mobile Accessories" /><h2>Mobile Stand</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/selfie-stick.png" alt="Mobile Accessories" /><h2>Selfie Stick</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/mobile-stand2.png" alt="Mobile Accessories" /><h2>Mobile Stand</h2></a></li>
 <!--                                <li><a href="#"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2><h4>Rs : <span>499</span></h4></a></li>-->
                                 
                             </ul>
@@ -166,44 +160,40 @@ and open the template in the editor.
             </div>
             
 <!--            <div class="banner banner3 pull-left full-width">
-                <a href="#" class="height-350 full-width pull-left">
-
-                </a>
             </div>-->
             <div class="section-home panels">
                 <div class="best-seller margin-bottom-65 pull-left full-width">
                     <div class="title-head pull-left full-width">
                         <h3>Best Seller<span><a href="#">view all</a></span></h3>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
-                        <a href="product.php" class="height-270 full-width pull-left">
-                            <img src="../images/products/mobile1.png">
-                            <h2>Mobile Cover</h2>
-<!--                            <h4>Rs : <span>499</span></h4>-->
-                        </a>
-                    </div>
-                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
+                    <div class="seller-product pull-left width-19 height-270 offset-1">
                         <a href="#" class="height-270 full-width pull-left">
-                            <img src="../images/products/caraccess.png">
-                            <h2>Wheel Cap</h2>
+                            <img src="../images/products/mobile/mobile-pouch2.png" alt="Mobile Accessories" />
+                            <h2>Mobile-Pouch</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
-                        <a href="product.php" class="height-270 full-width pull-left">
-                            <img src="../images/products/mobile1.png">
-                            <h2>Mobile Cover</h2>
+                    <div class="seller-product pull-left">
+                        <a href="#" class="height-270 full-width pull-left">
+                            <img src="../images/products/car/car-stickers2.png" alt="Car Stickers" />
+                            <h2>Car Stickers</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
-                        <a href="product.php" class="height-270 full-width pull-left">
-                            <img src="../images/products/stationaries.png">
-                            <h2>Books</h2>
+                    <div class="seller-product pull-left">
+                        <a href="#" class="height-270 full-width pull-left">
+                            <img src="../images/products/mobile/mobile-stand.png" alt="Mobile Accessories" />
+                            <h2>Mobile Stand</h2>
                         </a>
                     </div>
-                    <div class="best-seller-product pull-left width-19 height-270 offset-1">
-                        <a href="product.php" class="height-270 full-width pull-left">
-                            <img src="../images/products/caraccess.png">
-                            <h2>Wheel Cap</h2>
+                    <div class="seller-product pull-left">
+                        <a href="#" class="height-270 full-width pull-left">
+                            <img src="../images/products/car/tyre2.png" alt="tyre" />
+                            <h2>Tyre</h2>
+                        </a>
+                    </div>
+                    <div class="seller-product pull-left">
+                        <a href="#" class="height-270 full-width pull-left">
+                            <img src="../images/products/stationary/color-pencil2.png" alt="Color Pencil" />
+                            <h2>Color Pencil</h2>
                         </a>
                     </div>
                 </div>
@@ -219,30 +209,8 @@ and open the template in the editor.
                                 </div>-->
             </div>
 <!--            <div class="banner banner4 pull-left full-width">
-                <a href="#" class="height-350 full-width pull-left">
-
-                </a>
             </div>-->
 
-<!--             tab for shop 
-            <div class="section-shop panels hide height-300">
-                <h1>tab for shop</h1>
-            </div>
-
-             tab for design 
-            <div class="section-design panels hide height-300">
-                <h1>tab for design</h1>
-            </div>
-
-             tab for gallery 
-            <div class="section-gallery panels hide height-300">
-                <h1>tab for gallery</h1>
-            </div>
-
-             tab for getintouch 
-            <div class="section-getintouch panels hide height-300">
-                <h1>tab for getintouch</h1>
-            </div>-->
 
         </section>
 
@@ -261,7 +229,10 @@ and open the template in the editor.
         <script type="text/javascript" src="../script/script.js"></script>
 
         <script type="text/javascript">
-            
+            $(document).ready(function(){
+                $(".nav-items").removeClass('nav-selected');
+                $(".nav-home").addClass('nav-selected');
+            });
         </script>
     </body>
 </html>

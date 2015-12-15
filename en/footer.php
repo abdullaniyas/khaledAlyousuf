@@ -1,11 +1,14 @@
 <footer class="brand-color1 brand-strip">
-    <div class="globe"></div>
+<!--    <div class="globe"></div>-->
     <div class="footer-categories">
         <div class="width-23 pull-left offset-1">
             <div>
                 <ul>
                     <li><p>CONTACT US</p></li>
-                    <li><a href="#">Shop No. 04, 2nd main<br />Silver Building<br />Ajman, UAE - 7774<br />Ph No.: 067438427</a></li>
+                    <li>Maryam Tower, Room No 203,</li>
+                    <li>Near Golden Coffee Shop,</li>
+                    <li>Nuimia, Ajman, UAE - 7774</li> 
+                    <li>Ph No.: 067438427</li>
                 </ul>
             </div>
         </div>
@@ -35,9 +38,6 @@
                 <ul>
                     <li><p>Connect</p></li>
                     <li><a href="#" class="social-icons fb-icon"></a><a href="#" class="social-icons twitter-icon"></a><a href="#" class="social-icons you-icon"></a><a href="#" class="social-icons linked-icon"></a></li>
-<!--                            <li><p>NEWSLETTER</p><input type="text" name="newsletter" class="newsletter-text" /></li>
-                    <li></li>
-                    <li></li>-->
                 </ul>
             </div>
         </div>

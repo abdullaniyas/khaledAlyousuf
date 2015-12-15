@@ -40,6 +40,30 @@ and open the template in the editor.
                             </ul>
                     </div>
                 </div>
+                <!--<div class="full-width pull-left height-300 contact-form">
+                    <h1>Write Us To</h1>
+                    <form id="form-contact" class="styled" action="connection/form.php" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <ol>
+                                <li class="form-row">
+                                    <h3>Name :</h3><input type="text" name="name" id="name" class="input required " placeholder="Your Name" required/>
+                                </li>
+                                <li class="form-row">
+                                    <h3>Email :</h3><input type="email" name="email" id="email" class="input required email" placeholder="Email Address" required/>
+                                </li>
+                                <li class="form-row">
+                                    <h3>Contact :</h3><input type="text" name="contact" id="contact" class="input required " placeholder="Contact Number" required/>
+                                </li>
+                                <li class="form-row">
+                                    <h3>Message :</h3><textarea name="descr" id="descr" class="input-text required " placeholder="Your Message" aria-invalid="false" aria-required="true" rows="3" cols="43" required></textarea>
+                                </li>
+                                <li class="form-row">
+                                    <h3></h3><button class="btn-submit" >Send</button>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </form>
+                </div>-->
             </div>
         </section>
 
@@ -56,6 +80,11 @@ and open the template in the editor.
         <script language="javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&v=3"></script>
         <script type="text/javascript" src="../script/alyousuf.js"></script>
         <script type="text/javascript" src="../script/main.js"></script>
-        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".nav-items").removeClass('nav-selected');
+                $(".nav-contact").addClass('nav-selected');
+            });
+        </script>
     </body>
 </html>
