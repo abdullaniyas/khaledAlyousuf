@@ -22,76 +22,36 @@ and open the template in the editor.
         <?php include 'header.php'; ?>
 
         <section class="margin-extra height-500">
-            
+
             <div class="full-width pull-left">
                 <div class="full-width category-banner"  style="background-image: url(../images/banners/banner4.jpg);">
                 </div>
                 <div class="width-1100 center-div">
-                    
+
                     <div class="full-width pull-left category-products">
                         <h1>Lubricants</h1>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/ATF-DEXRON.png" alt="Product" />
-                                <h2>ATF Dexron II & III</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/AUTOMOTIVE-GEAR-OIL.png" alt="AUTOMOTIVE GEAR OIL" />
-                                <h2>Automotive Gear Oil</h2>
-                            </a>
-                        </div>
-                            
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/brealflus.png" alt="Brake Fluid" />
-                                <h2>Brake Fluid</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/desilengion.png" alt="Brake Fluid" />
-                                <h2>Premium Desil Engine Oil</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/desilengion.png" alt="Premium Diesel Engine Oil" />
-                                <h2>Premium Diesel Engine Oil</h2>
-                            </a>
-                        </div>       
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/oil/grease.png" alt="Grease Calcium & Lithium" />
-                                <h2>Grease Calcium & Lithium</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#">
-                                <img src="../images/products/oil/HYDRAULIC-OIL.png" alt="Hydraulic Oil AW" />
-                                <h2>Hydraulic Oil AW</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#">
-                                <img src="../images/products/oil/INDUSTRIALGEAROIL.png" alt="Industrial Gear Oil" />
-                                <h2>Industrial Gear Oil</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#">
-                                <img src="../images/products/oil/MARINEENGINEOIL.png" alt="Marine Engine Oil" />
-                                <h2>Marine Engine Oil</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#">
-                                <img src="../images/products/oil/petrolengn.png" alt="Supreme Petrol Engine Oil" />
-                                <h2>Supreme Petrol Engine Oil</h2>
-                            </a>
-                        </div>
-                            
+                        <?php
+                        include_once "../components/dbconnection.php";
+
+                        $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
+                        $target = "../images/products/oil/";
+                        ?>
+
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+
+                            <div class="seller-product pull-left">
+                                <a href="#" >
+                                    <img src="<?php echo $target . $row['image']; ?>" alt="image" height="auto" width="100%"/><br />
+                                    <h2><?php echo $row['ename']; ?></h2>
+                                </a>
+                            </div>
+
+
+                        <?php }
+                        ?>
+
                     </div>
                 </div>
             </div>

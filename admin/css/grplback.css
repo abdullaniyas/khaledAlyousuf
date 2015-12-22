@@ -1,0 +1,357 @@
+/* 
+    Document   : grplback
+    Created on : 11 Jun, 2014, 11:28:37 AM
+    Author     : personal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Segoe UI;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.margin-bottom-4p {
+  margin-bottom:4%;  
+}
+.margin-top-2p {
+  margin-top:2%;  
+}
+.r-offset-12 {
+    margin-right: 12%;
+}
+header {
+    width: 920px;
+    margin: 0 auto;
+}
+header > a {
+    float: left;
+}
+header > a img {
+    width: 40px;
+    height: auto;
+    float: left;
+}
+header ul {
+    float: left;
+    padding: 0px;
+    margin: 18px 0px 0px 20px;
+}
+header ul li {
+    float: left;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: #3a3a3a;
+    padding: 10px 22px;
+}
+header ul li a:hover {
+    background-color: #BF1E2D;
+    color: #fff;
+}
+.clear {
+    clear: both;
+}
+.selected a {
+    background-color: #BF1E2D;
+    color: #fff;
+}
+.form-container {
+    border: 1px solid #222222;
+    box-shadow: 4px 4px 6px -4px #3a3a3a;
+    margin: 3% auto;
+    width: 400px;
+}
+.form-container2 {
+    width: 800px;
+    margin: 10% auto;
+    border: 1px solid #BF1E2D;
+    box-shadow: 4px 4px 6px -4px #3a3a3a;
+}
+.form-container2 label {
+    width: 20%;
+}
+.form-container2 fieldset textarea {
+    width:75% !important;
+}
+.form-container h2, .form-container2 h2 {
+    text-align: center;
+    margin: 5px auto;
+}
+.form-container form {
+    padding: 20px;
+}
+fieldset {
+    border: 0px solid #fff;
+    margin-bottom: 20px;
+}
+fieldset label {
+    float: left;
+    font-size: 17px;
+    font-weight: 600;
+    width: 40%;
+}
+fieldset input {
+    float: left;
+    width: 55%;
+}
+.form-container2  fieldset a {
+    margin-left: 20%;
+}
+
+fieldset button {
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+    padding: 5px 55px;
+    border: none;
+    background-color: #BF1E2D;
+}
+.show-container {
+    width: 960px;
+    margin: 0 auto;
+}
+aside {
+    float: left;
+    width: 40%;
+}
+aside a, fieldset a, fieldset button {
+    background-color: #080808;
+    border: medium none;
+    color: #e2bd49;
+    display: block;
+    float: left;
+    margin: 40px 30px 20px 20px;
+    padding: 5px 40px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+fieldset a, fieldset button {
+    margin: 0 30px 10px 0;
+}
+aside a:hover , fieldset a:hover , fieldset button:hover {
+    color: #e2bd49;
+    text-decoration: none; 
+    background-color: #222222;
+    border: 2px solid #222222;
+}
+.admin-container {
+    padding: 0px;
+    margin: 0px;
+}
+.admin-container li {
+    border: 1px solid #222222;
+    box-shadow: 4px 4px 6px -4px #3a3a3a;
+    float: left;
+    height: auto;
+    list-style: outside none none;
+    margin: 1%;
+    min-height: 275px;
+    position: relative;
+    width: 23%;
+}
+.admin-container li .update, .admin-container li .delete {
+    background-color: rgba(0, 128, 0, 0.8);
+    border-radius: 0;
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    margin-left: 1%;
+    margin-top: 1px;
+    padding: 2px 31px;
+    width: 48.5%;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.admin-container li .update:hover {
+    background-color: rgba(0, 128, 0, 1);
+    border: 1px solid #4CA64C;
+}
+.clear {
+    clear: both;
+}
+.admin-container li .delete {
+    background-color: rgba(191, 30, 45, 0.8)
+}
+.admin-container li .delete:hover {
+    border: 1px solid #D2616C;
+    background-color: rgba(191, 30, 45, 1);
+}
+
+.admin-container li > a[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  top: -110%;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 200;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.7);
+  box-shadow: 4px 4px 6px -4px #3a3a3a;
+}
+.admin-container li p {
+    float: left;
+    font-size: 14px;
+    height: 21px;
+    margin: 5px;
+    overflow: hidden;
+}
+.admin-container li img {
+    border-top: 1px solid #bf1e2d;
+    float: left;
+    height: auto;
+    max-height: 200px;
+    min-height: 175px;
+    width: 100%;
+}
+.admin-container li .file-name {
+    text-decoration: none;
+    text-align: center;
+    color: #BF1E2D;
+    float: left;
+    margin-left: 5px;
+}
+.login-page {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/grouplshaded.png);
+    background-position:-2px 0px;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+.login-container {
+    width: 250px;
+    float: left;
+    margin: 5% 0% 5% 5%;
+    height: auto;
+    min-height: 341px;
+    background-color: rgba(191, 30, 45, 0.3);
+    border: 1px solid #BF1E2D;
+}
+
+.login-container img {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin: 10px 30%;
+}
+.login-container p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.login-container #loginfailedmessage {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.login-container .input-login {
+    width: 80%;
+    float: left;
+    padding: 5px;
+    margin: 5px 10%;
+}
+.login-container button {
+    width: 80%;
+    float: left;
+    padding: 5px;
+    margin: 3px 10% 20px;
+    background-color: #BF1E2D;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+.login-container a {
+    float: right;
+    color: #0063DC;
+    font-size: 13px;
+    margin: -10px 26px 20px auto;
+}
+.show-container table {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #BF1E2D;
+}
+.show-container table tr {
+    border: 1px solid #BF1E2D;
+}
+.show-container table td {
+    border: 1px solid #BF1E2D;
+}
+.news-image {
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-image: url(../images/logo.png);
+    background-size: 30% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.news-image img {
+    background-color: #fff;
+}
+.show-container table td .file-name {
+    text-decoration: none;
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #2a2a2a;
+    font-size: 1.2em;
+}
+.show-container table td h6 {
+    width: 60%;
+    color: #6a6a6a;
+    float: left;
+    margin: 0px 0px 0px 20px;
+}
+/* pagination */
+.page_navigation {
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+.page_navigation a {
+    background-color: #222222;
+    color: #DCB645;
+    float: left;
+    font-family: Tahoma;
+    font-size: 13px;
+    margin: 2px;
+    padding: 2px 9px;
+    text-decoration: none;
+}
+.page_navigation a:hover {
+    background-color: #080808;
+}
+.active_page{
+    background-color:white !important;
+    color:black !important;
+}	
+
+.content {
+    color: black;
+}

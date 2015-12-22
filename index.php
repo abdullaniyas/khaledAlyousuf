@@ -1,6 +1,6 @@
 <?php
 
-//header("Location: http://khaledalyousuf.com/en/");
-//die();
+header("Location: http://localhost/projects/alyousuf/en/");
+die();
 
 ?>

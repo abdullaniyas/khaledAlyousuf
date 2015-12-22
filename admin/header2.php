@@ -42,13 +42,12 @@
                     <a class="col-xs-10" href="../"><img src="../../images/logo.png" class="img-responsive" alt="Responsive image"/></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="inner-navs home-menu active"><a href="../index.php">Home</a></li>
-                    <li class="inner-navs lubricants-menu"><a href="../lubricants/index.php">Lubricants</a></li>
-                    <li class="inner-navs stationary-menu"><a href="../stationary/index.php">Stationary</a></li>
-                    <li class="inner-navs car-menu"><a href="../car-accessories/index.php">Car Accessories</a></li>
-                    <li class="inner-navs mobile-menu"><a href="../mobile-accessories/index.php">Mobile Accessories</a></li>
-                    <li class="inner-navs about-menu"><a href="../about/index.php">About</a></li>
-                    <li class="inner-navs"><a href="../logout.php">Log Out</a></li>
+                    <li class="active"><a href="../index.php">Home</a></li>
+                    <li><a href="../lubricants/index.php">Lubricants</a></li>
+                    <li><a href="../stationary/index.php">Stationary</a></li>
+                    <li><a href="../car-accessories/index.php">Car Accessories</a></li>
+                    <li><a href="../mobile-accessories/index.php">Mobile Accessories</a></li>
+                    <li><a href="../about/index.php">About</a></li>
                 </ul>
             </div>
         </div>
