@@ -7,7 +7,6 @@ if (!isset($_SESSION['username']))    //login session
 ?>
 <?php
 include_once "../header.php";
-
 ?>
     
     <body>
@@ -15,8 +14,8 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
 $did = $_GET["id"];
-$target = "../../images/products/oil/";
-$result = mysqli_query($con, "SELECT * FROM lubricants WHERE id='".$did."'");
+$target = "../../images/products/stationary/";
+$result = mysqli_query($con, "SELECT * FROM stationary WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
@@ -76,7 +75,7 @@ while($row = mysqli_fetch_array($result)) {
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".stationary-menu").addClass('active');
     });
 </script>
 </body>

@@ -80,7 +80,7 @@ body {
   float: left;
 }
 .navbar-nav > li > a {
-  padding: 32px 21px;
+  padding: 32px 10px;
 }
 
 /* Redeclare since we override the float above */

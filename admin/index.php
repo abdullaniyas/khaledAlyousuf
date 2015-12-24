@@ -29,7 +29,7 @@
                     echo   '<div class="login-container">
 
                                 <form class="form-signin" action="index.php" method="post">
-                                              <img src="images/logo.png" alt="" />
+                                              <img src="../images/logo.png" alt="" />
                                       <div id="loginfailedmessage" >Invalid UserName or Password</div>
                                       <p>Log In</p>
                                       <input type="text" id="username" name="username" placeholder="User Name" class="input-login" required><br />
@@ -56,7 +56,7 @@
                 echo    '<div class="login-container">
                             
                             <form class="form-signin" action="index.php" method="post">
-                                          <img src="images/logo.png" alt="" />
+                                          <img src="../images/logo.png" alt="" />
                                   <p>Log In</p>
                                   <input type="text" id="username" name="username" placeholder="User Name" class="input-login" required><br />
                                   <input type="password" id="password" name="password" placeholder="Password" class="input-login" required><br />    

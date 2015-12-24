@@ -9,8 +9,8 @@ if (!isset($_SESSION['username']))    //login session
 include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
-$result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
-$target = "../../images/products/oil/";
+$result = mysqli_query($con, "SELECT * FROM  banners WHERE deleted='false' ORDER BY id DESC");
+$target = "../../images/banners/";
 ?>
 <div id="paging_container2" class="show-container container"> 
     <div class="clear"></div>
@@ -27,10 +27,8 @@ $target = "../../images/products/oil/";
             <li>
                 <a class="update" href="update-show.php?id=<?php echo $row['id']; ?>" title="click here to Edit">Edit</a>
                 <a class="delete" href="delete.php?id=<?php echo $row['id']; ?>" title="click here to Delete">Delete</a>
-                <p>Name (English) :&nbsp;<?php echo $row['ename']; ?></p>
-                <p>Name (Arabic) :&nbsp;<?php echo $row['aname']; ?></p>
-                <p>Category (English):&nbsp;<?php echo $row['categoryeng']; ?></p>
-                <img src="<?php echo $target . $row['image']; ?>" alt="image" height="auto" width="100%"/><br />
+                <p>Name:&nbsp;<?php echo $row['name']; ?></p>
+                <img src="<?php echo $target . $row['banimage']; ?>" alt="image" height="auto" width="100%"/><br />
             </li>
 
 
@@ -45,7 +43,7 @@ $target = "../../images/products/oil/";
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".banner-menu").addClass('active');
     });
 </script>
 </body>

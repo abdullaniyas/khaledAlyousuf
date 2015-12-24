@@ -10,7 +10,7 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
 $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
-$target = "../../images/products/oil";
+$target = "../../images/banners/";
 ?>
     
     <body>
@@ -19,34 +19,22 @@ $target = "../../images/products/oil";
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label>
-                        Name in English :
+                        Name:
                     </label>
-                    <input type="text" name="ename" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Name in Arabic :
-                    </label>
-                    <input type="text" name="aname" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Category (English):
-                    </label>
-                    <select name="categoryeng">
+                    <select name="name">
                         <option value="">Select a Category</option>
-                        <option value="Petrol">Petrol</option>
-                        <option value="Diesel">Diesel</option>
-                        <option value="Grease">Grease</option>
-                        <option value="Gear">Gear</option>
-                        <option value="Engine">Engine</option>
+                        <option value="slider">Slider</option>
+                        <option value="lubricants">Lubricants</option>
+                        <option value="stationary">Stationary</option>
+                        <option value="caracces">Car-Accessories</option>
+                        <option value="mobileacces">Mobile-Accessories</option>
                     </select> 
                 </fieldset>
                 <fieldset>
                     <label>
                         Upload an image :
                     </label>
-                    <input type="file" name="image" required/>
+                    <input type="file" name="banimage" required/>
                 </fieldset>
                 <fieldset>
                     <button>Submit</button>
@@ -58,7 +46,7 @@ $target = "../../images/products/oil";
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".banner-menu").addClass('active');
     });
 </script>
 </body>

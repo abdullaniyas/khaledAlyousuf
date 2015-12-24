@@ -29,30 +29,24 @@ and open the template in the editor.
             <div class="main-slider margin-extra" id="wowslider-container1">
                 <div class="ws_images">
                     <ul>
+                        <?php
+                        include_once "../components/dbconnection.php";
+
+                        $result = mysqli_query($con, "SELECT * FROM  banners WHERE deleted='false' and name='slider' ORDER BY id DESC");
+                        $target = "../images/banners/";
+                        ?>
+
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
                         <li>
-                            <h1>STATIONARY ITEMS</h1>
+<!--                            <h1>STATIONARY ITEMS</h1>
                             <h5>School, office, home</h5>
-                            <span><a href="#">See More</a></span>
-                            <img src="../images/slider/1.png" alt="4" id="wows1_0"/>
+                            <span><a href="#">See More</a></span>-->
+                            <img src="<?php echo $target . $row['banimage']; ?>" alt="4" id="wows1_0"/>
                         </li>
-                        <li>
-                            <h1>CAR ACCESSORIES</h1>
-                            <h5>Parts, Stickers, Lights</h5>
-                            <span><a href="#">See More</a></span>
-                            <img src="../images/slider/2.png" alt="1" id="wows1_1"/>
-                        </li>
-                        <li>
-                            <h1>MOBILE ACCESSORIES</h1>
-                            <h5>Panels, Back Covers, Earphones</h5>
-                            <span><a href="#">See More</a></span>
-                            <img src="../images/slider/3.png" alt="2" id="wows1_2"/>
-                        </li>
-                        <li>
-                            <h1>EUROLUBE OIL</h1>
-                            <h5>Gear Oil, Engine Oil</h5>
-                            <span><a href="#">See More</a></span>
-                            <img src="../images/slider/4.png" alt="3" id="wows1_3"/>
-                        </li>
+                        <?php }
+                        ?>
                     </ul>
                 </div>
                 <div class="ws_bullets">

@@ -43,6 +43,7 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="inner-navs home-menu active"><a href="../index.php">Home</a></li>
+                    <li class="inner-navs banner-menu active"><a href="../banner/index.php">Banners</a></li>
                     <li class="inner-navs lubricants-menu"><a href="../lubricants/index.php">Lubricants</a></li>
                     <li class="inner-navs stationary-menu"><a href="../stationary/index.php">Stationary</a></li>
                     <li class="inner-navs car-menu"><a href="../car-accessories/index.php">Car Accessories</a></li>

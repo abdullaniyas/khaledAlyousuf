@@ -9,20 +9,20 @@ if (!isset($_SESSION['username']))    //login session
 include_once "../../components/dbconnection.php";
 
  //die($_FILES['file']['name']);   
- if(isset($_FILES['image']['name'])){
+ if(isset($_FILES['banimage']['name'])){
   
-  $exti = end(explode('.', $_FILES['image']['name']));
+  $exti = end(explode('.', $_FILES['banimage']['name']));
   
   $exti;
-  $targeti = "../../images/products/oil/";
-  $ili = $_FILES['image']['name'];
+  $targeti = "../../images/banners/";
+  $ili = $_FILES['banimage']['name'];
   
   //die($il);
-  $targeti = $targeti . $_FILES['image']['name']; 
+  $targeti = $targeti . $_FILES['banimage']['name']; 
   
   //echo $target;  
   
-  if(move_uploaded_file($_FILES['image']['tmp_name'], $targeti)) 
+  if(move_uploaded_file($_FILES['banimage']['tmp_name'], $targeti)) 
      {
      echo "The image has been uploaded ";
      } 
@@ -32,21 +32,15 @@ include_once "../../components/dbconnection.php";
      }
   }
   
-if(isset($_POST["ename"])){
-	$ename=$_POST["ename"];} else {$ename="";}
+if(isset($_POST["name"])){
+	$name=$_POST["name"];} else {$name="";}
         
-if(isset($_POST["aname"])){
-	$aname=$_POST["aname"];} else {$aname="";}
-
-if(isset($_POST["categoryeng"])){
-	$categoryeng=$_POST["categoryeng"];} else {$categoryeng="";}
-        
-if(isset($_POST["image"])){
-	$image=$targeti;} else {echo "not set2";}
+if(isset($_POST["banimage"])){
+	$banimage=$targeti;} else {echo "not set2";}
      
         
-$sql="INSERT INTO  lubricants (ename, aname, categoryeng, image)
-        VALUES ('$ename', '$aname', '$categoryeng', '$ili')";
+$sql="INSERT INTO  banners (name, banimage)
+        VALUES ('$name', '$ili')";
 
 
 if (!mysqli_query($con, $sql))

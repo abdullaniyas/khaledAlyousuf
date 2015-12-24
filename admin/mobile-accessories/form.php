@@ -9,8 +9,8 @@ if (!isset($_SESSION['username']))    //login session
 include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
-$result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
-$target = "../../images/products/oil";
+$result = mysqli_query($con, "SELECT * FROM  mobile WHERE deleted='false' ORDER BY id DESC");
+$target = "../../images/products/mobile";
 ?>
     
     <body>
@@ -58,7 +58,7 @@ $target = "../../images/products/oil";
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".mobile-menu").addClass('active');
     });
 </script>
 </body>

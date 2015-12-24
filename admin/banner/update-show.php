@@ -7,7 +7,10 @@ if (!isset($_SESSION['username']))    //login session
 ?>
 <?php
 include_once "../header.php";
+include_once "../../components/dbconnection.php";
 
+$result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
+$target = "../../images/products/oil";
 ?>
     
     <body>
@@ -15,8 +18,8 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
 $did = $_GET["id"];
-$target = "../../images/products/oil/";
-$result = mysqli_query($con, "SELECT * FROM lubricants WHERE id='".$did."'");
+$target = "../../images/banners/";
+$result = mysqli_query($con, "SELECT * FROM banners WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
@@ -24,40 +27,28 @@ while($row = mysqli_fetch_array($result)) {
             <form action="update.php?id=<?php echo $row['id']; ?>" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label>
-                        Name in English
+                        Name
                     </label>
-                    <input type="text" name="ename" value="<?php echo $row['ename']; ?>" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Name in Arabic
-                    </label>
-                    <input type="text" name="aname" value="<?php echo $row['aname']; ?>" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Category in English
-                    </label>
-                    <select name="categoryeng" >
-                        <option value="<?php echo $row['categoryeng']; ?>"><?php echo $row['categoryeng']; ?></option>
-                        <option value="petrol">Petrol</option>
-                        <option value="diesel">Diesel</option>
-                        <option value="grease">Grease</option>
-                        <option value="gear">Gear</option>
-                        <option value="engine">Engine</option>
-                    </select>
+                    <select name="name" >
+                        <option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
+                        <option value="slider">Slider</option>
+                        <option value="lubricants">Lubricants</option>
+                        <option value="stationary">Stationary</option>
+                        <option value="caracces">Car-Accessories</option>
+                        <option value="mobileacces">Mobile-Accessories</option>
+                    </select> 
                 </fieldset>
                 <hr />
                 <fieldset>
                     <label>
                         Old Image :
                     </label>
-                    <img  id="slected-img" src="<?php echo $target.$row['image'];?>" width="200" height="auto" /><div class="clear"></div>
+                    <img  id="slected-img" src="<?php echo $target.$row['banimage'];?>" width="200" height="auto" /><div class="clear"></div>
                     <label>
                         Upload a new image
                     </label>
                     
-                    <input type="file" name="image" id="image-selcted" value="<?php echo $row['image']; ?>" class="image-selected" />
+                    <input type="file" name="banimage" id="image-selcted" value="<?php echo $row['image']; ?>" class="image-selected" />
                     
                 </fieldset>
                 <hr />
@@ -76,7 +67,7 @@ while($row = mysqli_fetch_array($result)) {
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".banner-menu").addClass('active');
     });
 </script>
 </body>

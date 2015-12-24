@@ -32,30 +32,33 @@
         <div class="spinner" style="display: none">Loading...</div>
     </div>
     <form class="action" action="upload.php" method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <label>
-                        Name in English :
-                    </label>
-                    <input type="text" name="ename" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Name in Arabic :
-                    </label>
-                    <input type="text" name="aname" required/>
-                </fieldset>
-        <input type="file" name="image" id="file" style="float:left; width: 250px">
-        <input type="button" id="btnCrop" value="Crop" style="float: right">
-        <input type="button" id="btnZoomIn" value="+" style="float: right">
-        <input type="button" id="btnZoomOut" value="-" style="float: right">
         <fieldset>
-                    <button>Submit</button>
-                    <a href="index.php">Cancel</a>
-                </fieldset>
-    </form>
-    <div class="cropped">
+            <label>
+                Name in English :
+            </label>
+            <input type="text" name="ename" required/>
+        </fieldset>
+        <fieldset>
+            <label>
+                Name in Arabic :
+            </label>
+            <input type="text" name="aname" required/>
+        </fieldset>
+        <fieldset>
+            <input type="file" id="file" style="float:left; width: 250px">
+            <input type="button" id="btnCrop" value="Crop" style="float: right">
+            <input type="button" id="btnZoomIn" value="+" style="float: right">
+            <input type="button" id="btnZoomOut" value="-" style="float: right">
+            <div class="cropped">
 
-    </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <button>Submit</button>
+            <a href="index.php">Cancel</a>
+        </fieldset>
+    </form>
+    
 </div>
 <script type="text/javascript">
     YUI().use('node', 'crop-box', function(Y){
@@ -79,6 +82,7 @@
         Y.one('#btnCrop').on('click', function(){
             var img = cropper.getDataURL()
             Y.one('.cropped').append('<img src="'+img+'">');
+            Y.one('.cropped').append('<input type="text" name="image" value="'+img+'" required/>');
         })
         Y.one('#btnZoomIn').on('click', function(){
             cropper.zoomIn();

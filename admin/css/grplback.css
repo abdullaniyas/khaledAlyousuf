@@ -66,7 +66,7 @@ header ul li a:hover {
     border: 1px solid #222222;
     box-shadow: 4px 4px 6px -4px #3a3a3a;
     margin: 3% auto;
-    width: 400px;
+    width: 600px;
 }
 .form-container2 {
     width: 800px;
@@ -156,7 +156,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     height: auto;
     list-style: outside none none;
     margin: 1%;
-    min-height: 275px;
+    height: 300px;
     position: relative;
     width: 23%;
 }
@@ -213,16 +213,16 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     float: left;
     font-size: 14px;
     height: 21px;
-    margin: 5px;
+    margin: 1px 5px;
     overflow: hidden;
 }
 .admin-container li img {
-    border-top: 1px solid #bf1e2d;
     float: left;
     height: auto;
+    margin: 3% 8%;
     max-height: 200px;
     min-height: 175px;
-    width: 100%;
+    width: 84%;
 }
 .admin-container li .file-name {
     text-decoration: none;
@@ -245,15 +245,15 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     margin: 5% 0% 5% 5%;
     height: auto;
     min-height: 341px;
-    background-color: rgba(191, 30, 45, 0.3);
-    border: 1px solid #BF1E2D;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #2a2a2a;
 }
 
 .login-container img {
-    width: 40%;
-    height: auto;
     float: left;
-    margin: 10px 30%;
+    height: auto;
+    margin: 10px 5%;
+    width: 90%;
 }
 .login-container p {
     text-align: center;

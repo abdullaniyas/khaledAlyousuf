@@ -15,11 +15,12 @@
         <div class="width-23 pull-left offset-1">
             <div class="border-left">
                 <ul>
-                    <li><p>INFORMATION</p></li>
-                    <li><a href="about.php">About us</a></li>
-                    <li><a href="policy.php">Policy</a></li>
-                    <li><a href="terms-and-conditions.php">Terms and conditions</a></li>
-                    <li><a href="faq.php">FAQ</a></li>
+                    <li><p>Accessories</p></li>
+                    <li><a href="petrol.php">Petrol</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">School</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">School</a></li>
                 </ul>
             </div>
         </div>
@@ -28,6 +29,8 @@
                 <ul>
                     <li><p>Accessories</p></li>
                     <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">School</a></li>
                     <li><a href="#">Car</a></li>
                     <li><a href="#">School</a></li>
                 </ul>
@@ -46,5 +49,14 @@
     
 </footer>
 <div class="copy-right full-width pull-left grey">
-    <p>Copyright @ Khaled <b>AL - Yousuf </b>General Trading LLC <script type="text/javascript">document.write(new Date().getFullYear());</script>. All rights reserved.</p>
+    <div class="pull-left">
+        <ul>
+            <li><a href="policy.php">Policy</a></li>
+            <li><a href="terms-and-conditions.php">Terms and conditions</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="pull-right copy-right-text">
+        <p>Copyright @ Khaled <b>AL - Yousuf </b>General Trading LLC <script type="text/javascript">document.write(new Date().getFullYear());</script>. All rights reserved.</p>
+    </div>
 </div> 

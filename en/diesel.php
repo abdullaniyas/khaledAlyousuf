@@ -5,7 +5,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>KHALED AL-YOUSUF | GENERAL TRADING LLC | IMPORT/EXPORT - LUBRICANTS</title>
+        <title>KHALED AL-YOUSUF | GENERAL TRADING LLC | IMPORT/EXPORT - LUBRICANTS/Diesel</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
@@ -24,25 +24,16 @@ and open the template in the editor.
         <section class="margin-extra height-500">
 
             <div class="full-width pull-left">
-                <?php
-                include_once "../components/dbconnection.php";
-                $result = mysqli_query($con, "SELECT banimage FROM  banners WHERE name='lubricants' ORDER BY id DESC");
-                        $target1 = "../images/banners/";
-                         
-                    while ($row = mysqli_fetch_array($result)) {
-                ?>
-                <div class="full-width category-banner" style="background-image: url(<?php echo $target1 . $row['banimage']; ?>);">
-                    
+                <div class="full-width category-banner"  style="background-image: url(../images/banners/banner4.jpg);">
                 </div>
-                <?php } ?>
                 <div class="width-1100 center-div">
 
                     <div class="full-width pull-left category-products">
-                        <h1>Lubricants</h1>
+                        <h1>Diesel</h1>
                         <?php
-                        
+                        include_once "../components/dbconnection.php";
 
-                        $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
+                        $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' and categoryeng='diesel' ORDER BY id DESC");
                         $target = "../images/products/oil/";
                         ?>
 

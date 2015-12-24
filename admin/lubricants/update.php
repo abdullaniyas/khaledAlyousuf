@@ -34,19 +34,22 @@ include_once "../../components/dbconnection.php";
   
   $did = $_GET["id"];
 if(isset($_POST["ename"])){
-	$ename=$_POST["aname"];} else {$ename="";}
+	$ename=$_POST["ename"];} else {$ename="";}
         
 if(isset($_POST["aname"])){
 	$aname=$_POST["aname"];} else {$aname="";}  
+
+if(isset($_POST["categoryeng"])){
+	$categoryeng=$_POST["categoryeng"];} else {$categoryeng="";}
         
 if(isset($_FILES["image"])){
 	$image=$targeti;} else {echo "not set2";}
         
      
 if($_FILES['image']['name']=="") {
-    $sql="UPDATE lubricants SET ename = '".$ename."', aname = '".$aname."' WHERE id='".$did."'" ;
+    $sql="UPDATE lubricants SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."' WHERE id='".$did."'" ;
 } else if($_FILES['image']['name']!=""){
-    $sql="UPDATE lubricants SET ename = '".$ename."', aname = '".$aname."', image = '".$ili."' WHERE id='".$did."'" ;
+    $sql="UPDATE lubricants SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."', image = '".$ili."' WHERE id='".$did."'" ;
 }
 
 

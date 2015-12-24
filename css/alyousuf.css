@@ -390,7 +390,7 @@ nav ul li:hover {
 .seller-product a {
     text-decoration: none;
 }
-.seller-product a h2 {
+.seller-product h2 {
     color: #2a2a2a;
     font-size: 16px;
     font-weight: 400;
@@ -400,7 +400,19 @@ nav ul li:hover {
     overflow: hidden;
     text-align: center;
 }
-
+.seller-product h3 {
+    color: #ED1F28;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    margin: 0 auto 0;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+}
+.seller-product h3:hover {
+    text-decoration: underline;
+}
 .seller-product a h4 {
     font-size: 12px;
     color: #303030;
@@ -438,12 +450,12 @@ nav ul li:hover {
     width: 220px;
 }
 .category-products .seller-product img {
-    padding: 3%;
+    padding: 3% 3% 0 3%;
     width: 94%;
 }
-.category-products .seller-product a h2 { 
+.category-products .seller-product h2 { 
     font-size: 15px;
-    margin: 4px auto 8px;
+    margin: 0 auto 7px;
 }
 .title-head h3 {
     text-align: center;
@@ -730,13 +742,34 @@ footer ul li a {
     background-size: 100% auto;
     background-image: url(../images/icons/card-icons.png);
 }
+.copy-right div ul {
+    float: left;
+    margin-left: 70px;
+}
 
+.copy-right div ul li {
+    float: left;
+    border-right: 1px solid #d9b13b;
+    font-size: 14px;
+    list-style: none;
+    color: #D9B13B;
+    padding: 0 20px;
+}
+.copy-right div ul li:last-child {
+    border-right: none;
+}
+.copy-right div ul li a {
+    color: inherit;
+    text-decoration: none;
+}
 .copy-right p {
-    text-align: center;
     color: #D9B13B;
     font-size: 14px;
     z-index: 10;
     position: relative;
+}
+.copy-right-text {
+    margin-right: 120px;
 }
 .globe {
     background-image: url(" ../images/icons/globe.png");

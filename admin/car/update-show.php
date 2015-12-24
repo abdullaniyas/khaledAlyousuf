@@ -15,8 +15,8 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
 $did = $_GET["id"];
-$target = "../../images/products/oil/";
-$result = mysqli_query($con, "SELECT * FROM lubricants WHERE id='".$did."'");
+$target = "../../images/products/car/";
+$result = mysqli_query($con, "SELECT * FROM car WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
@@ -76,7 +76,7 @@ while($row = mysqli_fetch_array($result)) {
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".car-menu").addClass('active');
     });
 </script>
 </body>

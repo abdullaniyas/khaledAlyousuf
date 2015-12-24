@@ -14,7 +14,7 @@ include_once "../../components/dbconnection.php";
   $exti = end(explode('.', $_FILES['image']['name']));
   
   $exti;
-  $targeti = "../../images/products/oil/";
+  $targeti = "../../images/products/car/";
   $ili = $_FILES['image']['name'];
   
   //die($il);
@@ -45,7 +45,7 @@ if(isset($_POST["image"])){
 	$image=$targeti;} else {echo "not set2";}
      
         
-$sql="INSERT INTO  lubricants (ename, aname, categoryeng, image)
+$sql="INSERT INTO  car (ename, aname, categoryeng, image)
         VALUES ('$ename', '$aname', '$categoryeng', '$ili')";
 
 

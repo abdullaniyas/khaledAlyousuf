@@ -14,39 +14,43 @@ include_once "../../components/dbconnection.php";
   $exti = end(explode('.', $_FILES['image']['name']));
   
   $exti;
-  $targeti = "../../images/products/oil/";
+  $targeti = "../../images/products/stationary/";
   $ili = $_FILES['image']['name'];
   
   //die($il);
   $targeti = $targeti . $_FILES['image']['name']; 
   
-  //echo $target;  
+ // echo $target;  
   
   if(move_uploaded_file($_FILES['image']['tmp_name'], $targeti)) 
      {
-     echo "The image has been uploaded ";
+     //echo "The image has been uploaded ";
      } 
      else
      {
-     echo "Sorry, there was a problem uploading your image.";
+     //echo "Sorry, there was a problem uploading your image.";
      }
   }
   
+  $did = $_GET["id"];
 if(isset($_POST["ename"])){
 	$ename=$_POST["ename"];} else {$ename="";}
         
 if(isset($_POST["aname"])){
-	$aname=$_POST["aname"];} else {$aname="";}
+	$aname=$_POST["aname"];} else {$aname="";}  
 
 if(isset($_POST["categoryeng"])){
 	$categoryeng=$_POST["categoryeng"];} else {$categoryeng="";}
         
-if(isset($_POST["image"])){
+if(isset($_FILES["image"])){
 	$image=$targeti;} else {echo "not set2";}
-     
         
-$sql="INSERT INTO  lubricants (ename, aname, categoryeng, image)
-        VALUES ('$ename', '$aname', '$categoryeng', '$ili')";
+     
+if($_FILES['image']['name']=="") {
+    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."' WHERE id='".$did."'" ;
+} else if($_FILES['image']['name']!=""){
+    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."', image = '".$ili."' WHERE id='".$did."'" ;
+}
 
 
 if (!mysqli_query($con, $sql))
@@ -54,7 +58,7 @@ if (!mysqli_query($con, $sql))
     
 	  //console.log('failed');
   //die('Error: '.mysqli_error($con));
-  echo " Sorry for the inconvenience, please insert again. Error: ".mysqli_error($con);
+  echo " couldnt upload. Error: ".mysqli_error($con);
   } else {
       header('Location: index.php');
   }
