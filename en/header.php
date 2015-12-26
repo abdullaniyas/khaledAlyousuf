@@ -2,7 +2,9 @@
     <div class="main-header full-width pull-left brand-color1">
         <div class="full-width header-container">
             <div class="logo pull-left">
-                <img src="../images/logo.png" alt="logo" />
+                <a href="index.php">
+                    <img src="../images/logo.png" alt="logo" />
+                </a>
             </div>
             <nav>    
                 <ul class="width-1024">

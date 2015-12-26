@@ -35,7 +35,6 @@ $(document).ready(function(){
     $('.landing-page').css({
         'height': +y+"px"
     });
-
 });
 
 

@@ -32,19 +32,19 @@ and open the template in the editor.
                         <?php
                         include_once "../components/dbconnection.php";
 
-                        $result = mysqli_query($con, "SELECT * FROM  banners WHERE deleted='false' and name='slider' ORDER BY id DESC");
+                        $result = mysqli_query($con, "SELECT * FROM  banners WHERE deleted='false' and name='slider' ORDER BY id DESC LIMIT 3");
                         $target = "../images/banners/";
                         ?>
 
                         <?php
                         while ($row = mysqli_fetch_array($result)) {
                             ?>
-                        <li>
-<!--                            <h1>STATIONARY ITEMS</h1>
-                            <h5>School, office, home</h5>
-                            <span><a href="#">See More</a></span>-->
-                            <img src="<?php echo $target . $row['banimage']; ?>" alt="4" id="wows1_0"/>
-                        </li>
+                            <li>
+                                <!--                            <h1>STATIONARY ITEMS</h1>
+                                                            <h5>School, office, home</h5>
+                                                            <span><a href="#">See More</a></span>-->
+                                <img src="<?php echo $target . $row['banimage']; ?>" alt="4" id="wows1_0"/>
+                            </li>
                         <?php }
                         ?>
                     </ul>
@@ -59,34 +59,31 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="scroller_anchor" style="position: absolute; bottom: 30px; width: 100%; height: 10px;"></div>
-            <!--<nav>
-                
-                <ul class="width-1024">
-                    <li class="nav-items nav-selected nav-home" data-name="section-home">HOME</li>
-                    <li class="nav-items nav-shop" data-name="section-shop">SHOP</li>
-                    <li class="nav-items nav-design" data-name="section-design">DESIGN</li>
-                    <li class="nav-items nav-gallery" data-name="section-gallery">GALLERY</li>
-                    <li class="nav-items nav-getintouch" data-name="section-getintouch">GET IN TOUCH</li>
-                </ul>
-            </nav>-->
         </div>
         <section>
-            <div class="section-home panels">
+            <div class="section-home panels stationary-comp">
                 <div class="categories " >
                     <div class="title-head margin-top-20 pull-left full-width">
-                        <h3>Stationary Items<span><a href="#">view all</a></span></h3>
+                        <h3>Stationary Items<span><a href="stationary.php">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
                         <a href="#" class="prev1 prev">&lsaquo;</a>
                         <div class="carousel carousel1">
                             <ul>
-                                <li><a href="#"><img src="../images/products/stationary/color-pencil.png" alt="Color Pencil" /><h2>Color Pencil</h2></a></li>
-                                <li><a href="#"><img src="../images/products/stationary/eraser2.png" alt="Eraser" /><h2>Eraser</h2></a></li>
-                                <li><a href="#"><img src="../images/products/stationary/color-pencil2.png" alt="Color Pencil" /><h2>Color Pencil</h2></a></li>
-                                <li><a href="#"><img src="../images/products/stationary/pen.png" alt="Color Pencil" /><h2>Pen</h2></a></li>
-                                <li><a href="#"><img src="../images/products/stationary/sharpner3.png" alt="Sharpner" /><h2>Sharpner</h2></a></li>
-                                <li><a href="#"><img src="../images/products/stationary/book.png" alt="Book" /><h2>Book</h2></a></li>
+                                <?php
+                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
+                                $target = "../images/products/oil/";
+                                ?>
+
+                                <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                    <li>
+                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                    </li>
+
+                                <?php } ?>
                             </ul>
                         </div>
                         <a href="#" class="next1 next">&rsaquo;</a>
@@ -101,19 +98,26 @@ and open the template in the editor.
             <div class="section-home panels">
                 <div class="categories " >
                     <div class="title-head pull-left full-width">
-                        <h3>Car Accessories<span><a href="#">view all</a></span></h3>
+                        <h3>Car Accessories<span><a href="car-accessories.php">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
                         <a href="#" class="prev2 prev">&lsaquo;</a>
                         <div class="carousel carousel2">
                             <ul>
-                                <li><a href="#"><img src="../images/products/car/headlight.png" alt="headlight" />h2>Headlight</h2></a></li>
-                                <li><a href="#"><img src="../images/products/car/headlight2.png" alt="headlight" /><h2>Headlight</h2></a></li>
-                                <li><a href="#"><img src="../images/products/car/car-stickers2.png" alt="Car Stickers" /><h2>Car Stickers</h2></a></li>
-                                <li><a href="#"><img src="../images/products/car/tyre.png" alt="tyre" /><h2>Tyre</h2></a></li>
-                                <li><a href="#"><img src="../images/products/car/car-stickers.png" alt="Car Stickers" /><h2>Car Stickers</h2></a></li>
-                                <li><a href="#"><img src="../images/products/car/wheel-cap.png" alt="Wheel Cap" /><h2>Wheel Cap</h2></a></li>
+                                <?php
+                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
+                                $target = "../images/products/oil/";
+                                ?>
+
+                                <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                    <li>
+                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                    </li>
+
+                                <?php } ?>
                             </ul>
                         </div>
                         <a href="#" class="next2 next">&rsaquo;</a>
@@ -122,41 +126,84 @@ and open the template in the editor.
                 </div>
             </div>
 
-            
+
             <div class="banner banner2 pull-left full-width">
             </div>
-            
+
             <div class="section-home panels">
                 <div class="categories " >
                     <div class="title-head pull-left full-width">
-                        <h3>Mobile Accessories<span><a href="#">view all</a></span></h3>
+                        <h3>Mobile Accessories<span><a href="mobile-accessories.php">view all</a></span></h3>
                     </div>
 
                     <div class="custom-container slider-tab scrollMore">
                         <a href="#" class="prev3 prev">&lsaquo;</a>
                         <div class="carousel carousel3">
                             <ul>
+                                <?php
+                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
+                                $target = "../images/products/oil/";
+                                ?>
+
+                                <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                    <li>
+                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                    </li>
+
+                                <?php } ?>
+                            </ul>
+<!--                            <ul>
                                 <li><a href="#"><img src="../images/products/mobile/ear-phones2.png" alt="Mobile Accessories" /><h2>Sony Earphones</h2></a></li>
                                 <li><a href="#"><img src="../images/products/mobile/iphone-6plus.png" alt="Mobile Accessories" /><h2>iPhone 6 Plus</h2></a></li>
                                 <li><a href="#"><img src="../images/products/mobile/headset.png" alt="Mobile Accessories" /><h2>Headset</h2></a></li>
                                 <li><a href="#"><img src="../images/products/mobile/mobile-pouch2.png" alt="Mobile Accessories" /><h2>Mobile Pouch</h2></a></li>
                                 <li><a href="#"><img src="../images/products/mobile/mobile-stand.png" alt="Mobile Accessories" /><h2>Mobile Stand</h2></a></li>
                                 <li><a href="#"><img src="../images/products/mobile/selfie-stick.png" alt="Mobile Accessories" /><h2>Selfie Stick</h2></a></li>
-                                <li><a href="#"><img src="../images/products/mobile/mobile-stand2.png" alt="Mobile Accessories" /><h2>Mobile Stand</h2></a></li>
+                                <li><a href="#"><img src="../images/products/mobile/mobile-stand2.png" alt="Mobile Accessories" /><h2>Mobile Stand</h2></a></li>-->
 <!--                                <li><a href="#"><img src="../images/products/mobile1.png"><h2>Mobile Covers</h2><h4>Rs : <span>499</span></h4></a></li>-->
-                                
-                            </ul>
+
+<!--                            </ul>-->
                         </div>
                         <a href="#" class="next3 next">&rsaquo;</a>
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>
-            
-<!--            <div class="banner banner3 pull-left full-width">
-            </div>-->
+
+            <!--            <div class="banner banner3 pull-left full-width">
+                        </div>-->
             <div class="section-home panels">
-                <div class="best-seller margin-bottom-65 pull-left full-width">
+                <div class="categories " >
+                    <div class="title-head pull-left full-width">
+                        <h3>Lubricants<span><a href="lubricants.php">view all</a></span></h3>
+                    </div>
+
+                    <div class="custom-container slider-tab scrollMore">
+                        <a href="#" class="prev2 prev">&lsaquo;</a>
+                        <div class="carousel carousel2">
+                            <ul>
+                                <?php
+                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
+                                $target = "../images/products/oil/";
+                                ?>
+
+                                <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                    <li>
+                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                    </li>
+
+                                <?php } ?>
+                            </ul>
+                        </div>
+                        <a href="#" class="next2 next">&rsaquo;</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+<!--                <div class="best-seller margin-bottom-65 pull-left full-width">
                     <div class="title-head pull-left full-width">
                         <h3>Best Seller<span><a href="#">view all</a></span></h3>
                     </div>
@@ -166,44 +213,8 @@ and open the template in the editor.
                             <h2>Mobile-Pouch</h2>
                         </a>
                     </div>
-                    <div class="seller-product pull-left">
-                        <a href="#" class="height-270 full-width pull-left">
-                            <img src="../images/products/car/car-stickers2.png" alt="Car Stickers" />
-                            <h2>Car Stickers</h2>
-                        </a>
-                    </div>
-                    <div class="seller-product pull-left">
-                        <a href="#" class="height-270 full-width pull-left">
-                            <img src="../images/products/mobile/mobile-stand.png" alt="Mobile Accessories" />
-                            <h2>Mobile Stand</h2>
-                        </a>
-                    </div>
-                    <div class="seller-product pull-left">
-                        <a href="#" class="height-270 full-width pull-left">
-                            <img src="../images/products/car/tyre2.png" alt="tyre" />
-                            <h2>Tyre</h2>
-                        </a>
-                    </div>
-                    <div class="seller-product pull-left">
-                        <a href="#" class="height-270 full-width pull-left">
-                            <img src="../images/products/stationary/color-pencil2.png" alt="Color Pencil" />
-                            <h2>Color Pencil</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--                <div class="uploads margin-top-20">
-                                    <div class="upload-container">
-                                        <div class="pull-left width-37 selfie">
-                                            <button>Upload Selfie</button>
-                                        </div>
-                                        <div class="pull-left width-37 events offset-26">
-                                            <button>Company Events</button>
-                                        </div>
-                                    </div>
-                                </div>-->
+                </div>-->
             </div>
-<!--            <div class="banner banner4 pull-left full-width">
-            </div>-->
 
 
         </section>
@@ -223,7 +234,7 @@ and open the template in the editor.
         <script type="text/javascript" src="../script/script.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $(".nav-items").removeClass('nav-selected');
                 $(".nav-home").addClass('nav-selected');
             });

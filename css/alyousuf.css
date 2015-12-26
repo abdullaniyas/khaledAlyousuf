@@ -391,16 +391,20 @@ nav ul li:hover {
     text-decoration: none;
 }
 .seller-product h2 {
+    float: left;
+    width: 100%;
     color: #2a2a2a;
     font-size: 16px;
     font-weight: 400;
     height: auto;
-    margin: 4px auto 0;
+    margin: 1px auto 0;
     max-height: 46px;
     overflow: hidden;
     text-align: center;
 }
 .seller-product h3 {
+    float: left;
+    width: 100%;
     color: #ED1F28;
     font-size: 14px;
     font-weight: 400;
@@ -523,7 +527,7 @@ section {
     width: 248px;
     margin-left: 5px;
     margin-right: 5px;
-    height: 290px;
+    height: 303px;
     border: 1px solid #7a7a7a;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -537,13 +541,20 @@ section {
 }
 /* Styling for image based carousel content. Only width and height are mandatory */
 .slider-tab .carousel>ul>li>a {
+    text-decoration: none;
+    float: left;
+}
+.slider-tab .carousel>ul>li>a>img {
     float: left;
     width: 100%;
-    height: 241px;
+    height: 250px;
+    max-height: 250px;
     text-decoration: none;
+    vertical-align:middle;
+    margin: 0;
 }
 
-.slider-tab .carousel>ul>li>a h2 {
+.slider-tab .carousel>ul>li h2 {
     font-size: 16px;
     font-weight: 400;
     color: #2a2a2a;
@@ -552,31 +563,28 @@ section {
     height: auto;
     max-height: 46px;
     width: 92%;
-    margin-left: 4%;
     overflow: hidden;
 }
-
-.slider-tab .carousel>ul>li>a h4 {
-    font-size: 12px;
-    color: #303030;
-    text-align: center;
-    margin: 0 auto;
+.slider-tab .carousel>ul>li h2 a, .slider-tab .carousel>ul>li h3 a {
+    text-decoration: none;
 }
 
-.slider-tab .carousel>ul>li>a h4 span {
-    font-size: 16px;
-    color: #B03D22;
-}
-
-.slider-tab .carousel>ul>li>a>img {
+.slider-tab .carousel>ul>li h3 {
+    float: left;
     width: 100%;
-    height: 100%;
-    vertical-align:middle;
-
-    /* optional */
-    margin: 0;
-    border-radius: 5px;
+    color: #ed1f28;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3px auto 0;
 }
+.slider-tab .carousel>ul>li h3 a:hover {
+    text-decoration: underline;
+}
+
+
+
 
 /* Styling for text based carousel content. Only width and height are mandatory */
 .slider-tab .carousel>ul>li>p {
@@ -596,8 +604,8 @@ section {
 .slider-tab a.prev, .slider-tab a.next, .slider-tab a.go {
     display: block;
     width: 70px;
-    padding-top: 123px;
-    padding-bottom: 122px;
+    padding-bottom: 100px;
+    padding-top: 124px;
     line-height: 1;
     color: ghostwhite;
     text-decoration: none;

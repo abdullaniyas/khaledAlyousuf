@@ -5,13 +5,10 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>KHALED AL-YOUSUF | GENERAL TRADING LLC | IMPORT/EXPORT - CAR ACCESSPRIES</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
-        <!--        <link rel="stylesheet" type="text/css" href="../css/style.css" />
-                 Slider 
-                <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- Slider ends -->
@@ -22,93 +19,46 @@ and open the template in the editor.
         <?php include 'header.php'; ?>
 
         <section class="margin-extra height-500">
-            
+
             <div class="full-width pull-left">
-                <div class="full-width category-banner"  style="background-image: url(../images/banners/banner2.jpg);">
-                </div>
-                <div class="width-1100 center-div">
+                <?php
+                include_once "../components/dbconnection.php";
+                $result = mysqli_query($con, "SELECT banimage FROM  banners WHERE name='lubricants' ORDER BY id DESC LIMIT 1");
+                        $target1 = "../images/banners/";
+                         
+                    while ($row = mysqli_fetch_array($result)) {
+                ?>
+                <div class="full-width category-banner" style="background-image: url(<?php echo $target1 . $row['banimage']; ?>);">
                     
+                </div>
+                <?php } ?>
+                <div class="width-1100 center-div">
+
                     <div class="full-width pull-left category-products">
                         <h1>Car Accessories</h1>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-baby-seat.png" alt="Car Baby Seat" />
-                                <h2>Car Baby Seat</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-lcd.png" alt="Car Lcd" />
-                                <h2>Car Lcd</h2>
-                            </a>
-                        </div>
-                            
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-seat.png" alt="Car Seat" />
-                                <h2>Car Seat</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-sterio.png" alt="Car Sterio" />
-                                <h2>Car Sterio</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-stickers.png" alt="Car Stickers" />
-                                <h2>Car Stickers</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/car-stickers2.png" alt="Car Stickers" />
-                                <h2>Car Stickers</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/headlight.png" alt="headlight" />
-                                <h2>Headlight</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/headlight2.png" alt="headlight" />
-                                <h2>Headlight</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/lcd.png" alt="lcd" />
-                                <h2>LCD</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/tyre.png" alt="tyre" />
-                                <h2>Tyre</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/tyre2.png" alt="tyre" />
-                                <h2>Tyre</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/wheel-cap.png" alt="Wheel Cap" />
-                                <h2>Wheel Cap</h2>
-                            </a>
-                        </div>
-                        <div class="seller-product pull-left">
-                            <a href="#" >
-                                <img src="../images/products/car/wheel-cap2.png" alt="Wheel Cap" />
-                                <h2>Wheel Cap</h2>
-                            </a>
-                        </div>
+                        <?php
+                        
+
+                        $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
+                        $target = "../images/products/oil/";
+                        ?>
+
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+
+                            <div class="seller-product pull-left">
+                                <a href="#" >
+                                    <img src="<?php echo $target . $row['image']; ?>" alt="image" height="auto" width="100%"/>
+                                </a>
+                                <h3><a href="<?php echo $row['categoryeng']; ?>.php"><?php echo $row['categoryeng']; ?></a></h3>
+                                <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                            </div>
+
+
+                        <?php }
+                        ?>
+
                     </div>
                 </div>
             </div>
@@ -121,9 +71,10 @@ and open the template in the editor.
 
 
 
-<!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--        <script src="../script/jquery-1.11.1.js"></script>-->
         <script type="text/javascript" src="../script/alyousuf.js"></script>
+        <script type="text/javascript" src="../script/modernizr.custom.28468.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $(".nav-items").removeClass('nav-selected');
