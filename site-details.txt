@@ -1,0 +1,35 @@
+
+
+Front End --- > Home ( en/index.php )
+
+		Lubricants ( Lubricants.php )
+		--> Petrol ( petrol.php )
+		--> Grease ( Grease.php )
+		--> Diesel ( Diesel.php )
+		--> Engine ( Engine.php )
+		--> Brake ( Brake.php )
+
+		Stationary ( Lubricants.php )
+		--> Pen ( petrol.php )
+		--> Scale ( petrol.php )
+		--> Eraser ( petrol.php )
+		--> Books ( petrol.php )
+		--> Sharpner( petrol.php )
+ 
+		Car Accessories (Lubricants.php )
+		--> carlcd( petrol.php )
+		--> carseat( petrol.php )
+		--> headlamp( petrol.php )
+		--> stickers( petrol.php )
+		--> tyre( petrol.php )
+
+		Mobile Accessories ( Lubricants.php )
+		--> mobile( petrol.php )
+		--> selfiestick( petrol.php )
+		--> headsets( petrol.php )
+		--> pouch( petrol.php )
+		--> stand( petrol.php )
+
+		About US (about.php )
+
+		Contact Us ( contact.php )	

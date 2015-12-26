@@ -215,6 +215,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     height: 21px;
     margin: 1px 5px;
     overflow: hidden;
+    width: 100%;
 }
 .admin-container li img {
     float: left;
