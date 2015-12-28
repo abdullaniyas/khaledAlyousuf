@@ -5,13 +5,10 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>KHALED AL-YOUSUF | GENERAL TRADING LLC | IMPORT/EXPORT - ABOUT US</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
-        <!--        <link rel="stylesheet" type="text/css" href="../css/style.css" />
-                 Slider 
-                <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- Slider ends -->
@@ -19,14 +16,22 @@ and open the template in the editor.
     <body>
 
         <!-- Header -->
-        <?php include 'header.php'; ?>
-
+        <?php include 'header.php'; 
+        include_once "../components/dbconnection.php";
+        $result = mysqli_query($con, "SELECT * FROM  about WHERE category='aboutdescr' and deleted='false' ORDER BY id DESC LIMIT 1");
+             ?>
         <section class="margin-extra height-400">
             <div class="full-width pull-left height-400 about-banner">
                 <div class="center-div">
                     <h2>About Us</h2>
                     <div class="width-70 center-div about-border"></div>
-                    <p><span>K</span>haled Al Yousuf General Trading is trading shop situated in the heart of Ajman, which deals with stationary items, Car accessories, Mobile Accessories, and oil. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <?php
+                    while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                    <p><?php echo $row['edescription']; ?></p>
+                    
+                    <?php } ?>
+                    
                     <div class="width-70 center-div about-border"></div>
                 </div>
             </div>

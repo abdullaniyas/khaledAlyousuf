@@ -48,8 +48,12 @@ if(isset($_POST["eposition"])){
 if(isset($_POST["aposition"])){
 	$aposition=$_POST["aposition"];} else {$aposition="";}
 
-if(isset($_POST["desciption"])){
-	$desciption=$_POST["desciption"];} else {$desciption="";}   
+if(isset($_POST["edescription"])){
+	$edescription=$_POST["edescription"];} else {$edescription="";}
+
+if(isset($_POST["adescription"])){
+	$adescription=$_POST["adescription"];} else {$adescription="";} 
+        
         
 if(isset($_POST["email"])){
 	$email=$_POST["email"];} else {$email="";}
@@ -59,9 +63,9 @@ if(isset($_FILES["image"])){
         
      
 if($_FILES['image']['name']=="") {
-    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', eposition='".$eposition."', aposition='".$aposition."', desciption='".$desciption."', email='".$email."' WHERE id='".$did."'" ;
+    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', eposition='".$eposition."', aposition='".$aposition."', edescription='".$edescription."', adescription='".$adescription."', email='".$email."' WHERE id='".$did."'" ;
 } else if($_FILES['image']['name']!=""){
-    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', image = '".$ili."',  eposition='".$eposition."', aposition='".$aposition."', desciption='".$desciption."', email='".$email."' WHERE id='".$did."'" ;
+    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', image = '".$ili."',  eposition='".$eposition."', aposition='".$aposition."', edescription='".$edescription."', adescription='".$adescription."', email='".$email."' WHERE id='".$did."'" ;
 }
 
 

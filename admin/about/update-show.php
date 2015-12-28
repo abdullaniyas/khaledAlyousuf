@@ -19,7 +19,7 @@ $result = mysqli_query($con, "SELECT * FROM about WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
-            <h2>Update Lubricants</h2>
+            <h2>Update About us</h2>
             <form action="update.php?id=<?php echo $row['id']; ?>" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label>
@@ -39,31 +39,37 @@ while($row = mysqli_fetch_array($result)) {
                     <label>
                         Name in English
                     </label>
-                    <input type="text" name="ename" value="<?php echo $row['ename']; ?>" required/>
+                    <input type="text" name="ename" value="<?php echo $row['ename']; ?>" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Name in Arabic
                     </label>
-                    <input type="text" name="aname" value="<?php echo $row['aname']; ?>" required/>
+                    <input type="text" name="aname" value="<?php echo $row['aname']; ?>" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Position in English :
                     </label>
-                    <input type="text" name="eposition" value="<?php echo $row['eposition']; ?>" required/>
+                    <input type="text" name="eposition" value="<?php echo $row['eposition']; ?>" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Position in Arabic :
                     </label>
-                    <input type="text" name="aposition" value="<?php echo $row['aposition']; ?>" required/>
+                    <input type="text" name="aposition" value="<?php echo $row['aposition']; ?>" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Desciption :
                     </label>
-                    <textarea name="desciption" ><?php echo $row['desciption']; ?></textarea>
+                    <textarea name="edescription" rows="6" cols="45"><?php echo $row['edescription']; ?></textarea>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption :
+                    </label>
+                    <textarea name="adescription" rows="6" cols="45"><?php echo $row['adescription']; ?></textarea>
                 </fieldset>
                 <fieldset>
                     <label>
@@ -100,7 +106,7 @@ while($row = mysqli_fetch_array($result)) {
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".stationary-menu").addClass('active');
+        $(".about-menu").addClass('active');
     });
 </script>
 </body>

@@ -40,7 +40,7 @@ and open the template in the editor.
                             </ul>
                     </div>
                 </div>
-                <!--<div class="full-width pull-left height-300 contact-form">
+                <div class="full-width pull-left height-300 contact-form">
                     <h1>Write Us To</h1>
                     <form id="form-contact" class="styled" action="connection/form.php" method="post" enctype="multipart/form-data">
                         <fieldset>
@@ -63,7 +63,7 @@ and open the template in the editor.
                             </ol>
                         </fieldset>
                     </form>
-                </div>-->
+                </div>
             </div>
         </section>
 

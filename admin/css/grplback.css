@@ -25,6 +25,17 @@ body {
 .r-offset-12 {
     margin-right: 12%;
 }
+.hide {
+    display: none;
+}
+.width-50 {
+    width: 50%;
+    height: auto;
+}
+.full-width {
+    width: 100%;
+    height: auto;
+}
 header {
     width: 920px;
     margin: 0 auto;
@@ -221,8 +232,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     float: left;
     height: auto;
     margin: 3% 8%;
-    max-height: 200px;
-    min-height: 175px;
+    max-height: 350px;
     width: 84%;
 }
 .admin-container li .file-name {
@@ -231,6 +241,16 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     color: #BF1E2D;
     float: left;
     margin-left: 5px;
+}
+.about-cont li {
+    width: 100%;
+     height: auto;
+}
+.about-cont li .update, .about-cont li .delete {
+    width: 20%;
+}
+.admin-container li p {
+    height: auto;
 }
 .login-page {
     margin: 0px;

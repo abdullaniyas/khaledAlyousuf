@@ -2124,7 +2124,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 }
 .about-banner div p {
     color: #5a5a5a;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     font-weight: 600;
     padding: 0 10px;
@@ -2309,10 +2309,10 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     width: 350px;
 }
 .styled .form-row h3 {
-    color: #5a5a5a;
+    color: #3a3a3a;
     float: left;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0 10px 10px auto;
     text-align: right;
     width: 107px;

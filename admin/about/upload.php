@@ -47,9 +47,12 @@ if(isset($_POST["eposition"])){
 if(isset($_POST["aposition"])){
 	$aposition=$_POST["aposition"];} else {$aposition="";}
         
-if(isset($_POST["desciption"])){
-	$desciption=$_POST["desciption"];} else {$desciption="";}    
-        
+if(isset($_POST["edescription"])){
+	$edescription=$_POST["edescription"];} else {$edescription="";}
+
+if(isset($_POST["adescription"])){
+	$adescription=$_POST["adescription"];} else {$adescription="";}
+
 if(isset($_POST["email"])){
 	$email=$_POST["email"];} else {$email="";}
         
@@ -57,8 +60,8 @@ if(isset($_POST["image"])){
 	$image=$targeti;} else {echo "not set2";}
      
         
-$sql="INSERT INTO about (category, ename, aname, eposition, aposition, desciption, email, image)
-        VALUES ('$category', '$ename', '$aname', '$eposition', '$aposition', '$desciption', '$email', '$ili')";
+$sql="INSERT INTO about (category, ename, aname, eposition, aposition, email, edescription, adescription, image)
+        VALUES ('$category', '$ename', '$aname', '$eposition', '$aposition', '$email', '$edescription', '$adescription', '$ili')";
 
 
 if (!mysqli_query($con, $sql))

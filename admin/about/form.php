@@ -34,31 +34,25 @@ $target = "../../images/about/";
                     <label>
                         Name in English :
                     </label>
-                    <input type="text" name="ename" required/>
+                    <input type="text" name="ename" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Name in Arabic :
                     </label>
-                    <input type="text" name="aname" required/>
+                    <input type="text" name="aname" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Position in English :
                     </label>
-                    <input type="text" name="eposition" required/>
+                    <input type="text" name="eposition" />
                 </fieldset>
                 <fieldset>
                     <label>
                         Position in Arabic :
                     </label>
-                    <input type="text" name="aposition" required/>
-                </fieldset>
-                <fieldset>
-                    <label>
-                        Desciption :
-                    </label>
-                    <textarea name="desciption" >Enter Description</textarea>
+                    <input type="text" name="aposition" />
                 </fieldset>
                 <fieldset>
                     <label>
@@ -66,6 +60,19 @@ $target = "../../images/about/";
                     </label>
                     <input type="text" name="email" />
                 </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption :
+                    </label>
+                    <textarea name="edescription" rows="6" cols="45">Enter Description</textarea>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in Arabic :
+                    </label>
+                    <textarea name="adescription" rows="6" cols="45">Enter Description</textarea>
+                </fieldset>
+                
                 <fieldset>
                     <label>
                         Upload an image :
@@ -82,7 +89,7 @@ $target = "../../images/about/";
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".stationary-menu").addClass('active');
+        $(".about-menu").addClass('active');
     });
 </script>
 </body>
