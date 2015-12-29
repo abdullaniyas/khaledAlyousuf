@@ -2486,3 +2486,58 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     font-size: 36px;
     margin-top: 58px;
 }
+
+@media screen and (max-width:1180px) {
+.logo {
+    margin: 0 0 0 0;
+}
+nav {
+    width: 65%;
+}
+nav ul li {
+    padding: 20px 7px;
+}
+.panels {
+    width: 924px;
+}
+.slider-tab .carousel {
+    width: 784px !important;
+}
+
+.copy-right div ul {
+    margin-left: 0;
+}
+.copy-right-text {
+    margin-right: 20px;
+}
+}
+@media screen and (max-width:1026px) {
+    nav ul li {
+        padding: 20px 6px;
+        font-size: 14px;
+    }
+    .footer-categories {
+        width: 100%;
+    }
+    .footer-categories > div {
+        width: 48%;
+    }
+    footer {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+}
+@media screen and (max-width:926px) {
+    nav {
+        display: none;
+        width: 65%;
+    }
+    .panels {
+        width: 663px;
+    }
+    .slider-tab .carousel {
+        width: 523px !important;
+    }
+    
+}

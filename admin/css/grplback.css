@@ -255,7 +255,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
 .login-page {
     margin: 0px;
     padding: 0px;
-    background-image: url(../images/grouplshaded.png);
+    background-image: url(../../images/dubai2.jpg);
     background-position:-2px 0px;
     background-repeat: repeat-y;
     background-size: 100% auto;
@@ -263,7 +263,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
 .login-container {
     width: 250px;
     float: left;
-    margin: 5% 0% 5% 5%;
+    margin: 115px 0 0 5%;
     height: auto;
     min-height: 341px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -299,7 +299,7 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     float: left;
     padding: 5px;
     margin: 3px 10% 20px;
-    background-color: #BF1E2D;
+    background-color: #e1bc48;
     border: none;
     color: #fff;
     font-size: 15px;
