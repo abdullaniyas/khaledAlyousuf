@@ -64,13 +64,13 @@ $target = "../../images/about/";
                     <label>
                         Desciption :
                     </label>
-                    <textarea name="edescription" rows="6" cols="45">Enter Description</textarea>
+                    <textarea name="edescription" rows="6" cols="45"></textarea>
                 </fieldset>
                 <fieldset>
                     <label>
                         Desciption in Arabic :
                     </label>
-                    <textarea name="adescription" rows="6" cols="45">Enter Description</textarea>
+                    <textarea name="adescription" rows="6" cols="45"></textarea>
                 </fieldset>
                 
                 <fieldset>

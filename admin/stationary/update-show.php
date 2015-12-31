@@ -7,6 +7,7 @@ if (!isset($_SESSION['username']))    //login session
 ?>
 <?php
 include_once "../header.php";
+
 ?>
     
     <body>
@@ -39,14 +40,35 @@ while($row = mysqli_fetch_array($result)) {
                     </label>
                     <select name="categoryeng" >
                         <option value="<?php echo $row['categoryeng']; ?>"><?php echo $row['categoryeng']; ?></option>
-                        <option value="petrol">Petrol</option>
-                        <option value="diesel">Diesel</option>
-                        <option value="grease">Grease</option>
-                        <option value="gear">Gear</option>
-                        <option value="engine">Engine</option>
+                        <option value="pen">Pen</option>
+                        <option value="book">Book</option>
+                        <option value="eraser">Eraser</option>
+                        <option value="sharpner">Sharpener</option>
+                        <option value="scale">Scale</option>
                     </select>
                 </fieldset>
-                <hr />
+                <fieldset>
+                    <label>
+                        Show Front:
+                    </label>
+                    <select name="showfront">
+                        <option value="<?php echo $row['showfront']; ?>"><?php echo $row['showfront']; ?></option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select> 
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in English :
+                    </label>
+                    <textarea name="edescription" rows="4" cols="45"><?php echo $row['edescription']; ?></textarea>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in Arabic :
+                    </label>
+                    <textarea name="adescription" rows="4" cols="45"><?php echo $row['adescription']; ?></textarea>
+                </fieldset>
                 <fieldset>
                     <label>
                         Old Image :
@@ -70,8 +92,7 @@ while($row = mysqli_fetch_array($result)) {
     <?php } ?>
         
         <?php include_once "../footer.php"; ?>
-<script type="text/javascript" src="../js/jquery.pajinate.js"></script>
-<script src="../js/admin.js" language="javascript" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');

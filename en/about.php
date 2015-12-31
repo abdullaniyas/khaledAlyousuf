@@ -16,22 +16,23 @@ and open the template in the editor.
     <body>
 
         <!-- Header -->
-        <?php include 'header.php'; 
+        <?php
+        include 'header.php';
         include_once "../components/dbconnection.php";
-        $result = mysqli_query($con, "SELECT * FROM  about WHERE category='aboutdescr' and deleted='false' ORDER BY id DESC LIMIT 1");
-             ?>
+        ?>
         <section class="margin-extra height-400">
             <div class="full-width pull-left height-400 about-banner">
                 <div class="center-div">
                     <h2>About Us</h2>
                     <div class="width-70 center-div about-border"></div>
                     <?php
+                    $result = mysqli_query($con, "SELECT * FROM  about WHERE category='aboutdescr' and deleted='false' ORDER BY id DESC LIMIT 1");
                     while ($row = mysqli_fetch_array($result)) {
-                    ?>
-                    <p><?php echo $row['edescription']; ?></p>
-                    
+                        ?>
+                        <p><?php echo $row['edescription']; ?></p>
+
                     <?php } ?>
-                    
+
                     <div class="width-70 center-div about-border"></div>
                 </div>
             </div>
@@ -39,9 +40,16 @@ and open the template in the editor.
                 <div class="width-700 center-div margin-top-20">
                     <h1>Our Sponsor</h1>
                     <div class="sponsor">
-                        <img src="../images/about/sponsor.jpg" alt="Sponosor" />
-                        <h3>Lorem Ipsum Lorem</h3>
-                        <p>Lorem Ipsum Lorem Lorem Ipsum Lorem</p>
+                        <?php
+                        $result = mysqli_query($con, "SELECT * FROM  about WHERE category='sponsor' and deleted='false' ORDER BY id DESC LIMIT 1");
+                        $target1 = "../images/about/";
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+                            <img src="<?php echo $target1 . $row['image']; ?>" alt="Sponosor" />
+                            <h3><?php echo $row['ename']; ?></h3>
+                            <p><?php echo $row['eposition']; ?></p>
+
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -50,35 +58,50 @@ and open the template in the editor.
                     <h1>Our Team</h1>
                     <div class="full-width pull-left ">
                         <div class="team-members">
-                            <img src="../images/about/mustafa.jpg" alt="Member" />
-                            <h3>Musthafa</h3>
-                            <h5>Managing director</h5>
-                            <p>musthafa@khaledalyouf.com</p>
+                            <?php
+                            $result = mysqli_query($con, "SELECT * FROM  about WHERE category='team1' and deleted='false' ORDER BY id DESC LIMIT 1");
+                            $target1 = "../images/about/";
+                            while ($row = mysqli_fetch_array($result)) {
+                                ?>
+                                <img src="<?php echo $target1 . $row['image']; ?>" alt="Sponosor" />
+                                <h3><?php echo $row['ename']; ?></h3>
+                                <h5><?php echo $row['eposition']; ?></h5>
+                                <p><?php echo $row['email']; ?></p>
+
+                            <?php } ?>
                         </div>
                         <div class="team-members">
-                            <img src="../images/about/no-image.jpg" alt="Member" />
-                            <h3>Salam</h3>
-                            <h5>Managing Partner</h5>
-                            <p>salam@khaledalyouf.com</p>
+                            <?php
+                            $result = mysqli_query($con, "SELECT * FROM  about WHERE category='team2' and deleted='false' ORDER BY id DESC LIMIT 1");
+                            $target1 = "../images/about/";
+                            while ($row = mysqli_fetch_array($result)) {
+                                ?>
+                                <img src="<?php echo $target1 . $row['image']; ?>" alt="Sponosor" />
+                                <h3><?php echo $row['ename']; ?></h3>
+                                <h5><?php echo $row['eposition']; ?></h5>
+                                <p><?php echo $row['email']; ?></p>
+
+                            <?php } ?>
                         </div>
                         <div class="team-members">
-                            <img src="../images/about/no-image.jpg" alt="Member" />
-                            <h3>Lorem Ipsum</h3>
-                            <h5>Lorem Ipsum Lorem Lorem Ipsum Lorem</h5>
-                            <p>xyzxyz@khaledalyouf.com</p>
+                            <?php
+                            $result = mysqli_query($con, "SELECT * FROM  about WHERE category='team3' and deleted='false' ORDER BY id DESC LIMIT 1");
+                            $target1 = "../images/about/";
+                            while ($row = mysqli_fetch_array($result)) {
+                                ?>
+                                <img src="<?php echo $target1 . $row['image']; ?>" alt="Sponosor" />
+                                <h3><?php echo $row['ename']; ?></h3>
+                                <h5><?php echo $row['eposition']; ?></h5>
+                                <p><?php echo $row['email']; ?></p>
+
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="full-width pull-left about-team">
-                <div class="width-700 center-div shop-certicate">
-                    <h1>Our License</h1>
-                    <img src="../images/about/certificate.jpg" alt="Sponosor" />
-                </div>
-            </div>
         </section>
-        
-        
+
+
         <!-- Footer -->
 
         <?php include 'footer.php'; ?>

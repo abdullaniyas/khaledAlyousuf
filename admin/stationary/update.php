@@ -41,15 +41,24 @@ if(isset($_POST["aname"])){
 
 if(isset($_POST["categoryeng"])){
 	$categoryeng=$_POST["categoryeng"];} else {$categoryeng="";}
+
+if(isset($_POST["showfront"])){
+	$showfront=$_POST["showfront"];} else {$showfront="";}
+        
+if(isset($_POST["edescription"])){
+	$edescription=$_POST["edescription"];} else {$edescription="";}
+
+if(isset($_POST["adescription"])){
+	$adescription=$_POST["adescription"];} else {$adescription="";}
         
 if(isset($_FILES["image"])){
 	$image=$targeti;} else {echo "not set2";}
         
      
 if($_FILES['image']['name']=="") {
-    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."' WHERE id='".$did."'" ;
+    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."', showfront= '".$showfront."', edescription= '". addslashes($edescription) ."', adescription= '". addslashes($adescription) ."' WHERE id='".$did."'" ;
 } else if($_FILES['image']['name']!=""){
-    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."', image = '".$ili."' WHERE id='".$did."'" ;
+    $sql="UPDATE stationary SET ename = '".$ename."', aname = '".$aname."', categoryeng = '".$categoryeng."', showfront= '".$showfront."', edescription= '". addslashes($edescription) ."', adescription= '". addslashes($adescription) ."', image = '".$ili."' WHERE id='".$did."'" ;
 }
 
 

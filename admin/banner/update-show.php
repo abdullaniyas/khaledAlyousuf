@@ -23,7 +23,7 @@ $result = mysqli_query($con, "SELECT * FROM banners WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
-            <h2>Update Lubricants</h2>
+            <h2>Update Banner Image</h2>
             <form action="update.php?id=<?php echo $row['id']; ?>" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label>
@@ -62,8 +62,7 @@ while($row = mysqli_fetch_array($result)) {
     <?php } ?>
         
         <?php include_once "../footer.php"; ?>
-<script type="text/javascript" src="../js/jquery.pajinate.js"></script>
-<script src="../js/admin.js" language="javascript" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');

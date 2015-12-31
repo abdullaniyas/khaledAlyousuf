@@ -41,12 +41,21 @@ if(isset($_POST["aname"])){
 if(isset($_POST["categoryeng"])){
 	$categoryeng=$_POST["categoryeng"];} else {$categoryeng="";}
         
+if(isset($_POST["showfront"])){
+	$showfront=$_POST["showfront"];} else {$showfront="";}
+        
+if(isset($_POST["edescription"])){
+	$edescription=$_POST["edescription"];} else {$edescription="";}
+
+if(isset($_POST["adescription"])){
+	$adescription=$_POST["adescription"];} else {$adescription="";}
+        
 if(isset($_POST["image"])){
 	$image=$targeti;} else {echo "not set2";}
      
         
-$sql="INSERT INTO  mobile (ename, aname, categoryeng, image)
-        VALUES ('$ename', '$aname', '$categoryeng', '$ili')";
+$sql="INSERT INTO mobile (ename, aname, categoryeng, showfront, edescription, adescription, image)
+        VALUES ('$ename', '$aname', '$categoryeng', '$showfront', '". addslashes($edescription) ."', '". addslashes($adescription) ."', '$ili')";
 
 
 if (!mysqli_query($con, $sql))

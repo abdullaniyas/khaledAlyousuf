@@ -10,12 +10,12 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 
 $result = mysqli_query($con, "SELECT * FROM  stationary WHERE deleted='false' ORDER BY id DESC");
-$target = "../../images/products/stationary/";
+$target = "../../images/products/stationary";
 ?>
     
     <body>
         <div class="form-container margin-top-100">
-            <h2>Add New Lubricant</h2>
+            <h2>Add New Stationary Item</h2>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label>
@@ -31,16 +31,37 @@ $target = "../../images/products/stationary/";
                 </fieldset>
                 <fieldset>
                     <label>
-                        Category (English):
+                        Category :
                     </label>
                     <select name="categoryeng">
                         <option value="">Select a Category</option>
-                        <option value="Petrol">Petrol</option>
-                        <option value="Diesel">Diesel</option>
-                        <option value="Grease">Grease</option>
-                        <option value="Gear">Gear</option>
-                        <option value="Engine">Engine</option>
+                        <option value="pen">Pen</option>
+                        <option value="book">Book</option>
+                        <option value="eraser">Eraser</option>
+                        <option value="sharpner">Sharpener</option>
+                        <option value="scale">Scale</option>
                     </select> 
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Show Front:
+                    </label>
+                    <select name="showfront">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select> 
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in English :
+                    </label>
+                    <textarea name="edescription" rows="4" cols="45">Enter Description</textarea>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in Arabic :
+                    </label>
+                    <textarea name="adescription" rows="4" cols="45">Enter Description</textarea>
                 </fieldset>
                 <fieldset>
                     <label>
@@ -55,6 +76,7 @@ $target = "../../images/products/stationary/";
             </form>
         </div>
 <?php include_once "../footer.php"; ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');

@@ -17,10 +17,10 @@
                 <ul>
                     <li><p>Accessories</p></li>
                     <li><a href="petrol.php">Petrol</a></li>
-                    <li><a href="#">Car</a></li>
-                    <li><a href="#">School</a></li>
-                    <li><a href="#">Car</a></li>
-                    <li><a href="#">School</a></li>
+                    <li><a href="book.php">Book</a></li>
+                    <li><a href="earphones.php">Ear Phones</a></li>
+                    <li><a href="entertainment.php">Entertainment</a></li>
+                    <li><a href="lights.php">Head Lamps</a></li>
                 </ul>
             </div>
         </div>
@@ -28,11 +28,11 @@
             <div class="border-left">
                 <ul>
                     <li><p>Accessories</p></li>
-                    <li><a href="#">Mobile</a></li>
-                    <li><a href="#">Car</a></li>
-                    <li><a href="#">School</a></li>
-                    <li><a href="#">Car</a></li>
-                    <li><a href="#">School</a></li>
+                    <li><a href="selfiestick.php">Selfie Stick</a></li>
+                    <li><a href="stickers.php">Stickers</a></li>
+                    <li><a href="wheels.php">Wheels</a></li>
+                    <li><a href="seat.php">Car Seat</a></li>
+                    <li><a href="mobile.php">Mobile Phones</a></li>
                 </ul>
             </div>
         </div>

@@ -29,6 +29,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css" title="currentStyle">
+            @import "../css/show/demo_page.css";
+            @import "../css/show/demo_table.css";
+            @import "../css/show/TableTools.css";
+    </style>
+    <link rel="stylesheet" href="../css/show/jquery.dataTables.css" type="text/css" media="screen" />
   </head>
 
   <body>
@@ -43,7 +49,7 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
 <!--                    <li class="inner-navs home-menu active"><a href="../index.php">Home</a></li>-->
-                    <li class="inner-navs banner-menu active"><a href="../banner/">Banners</a></li>
+                    <li class="inner-navs banner-menu"><a href="../banner/">Banners</a></li>
                     <li class="inner-navs lubricants-menu"><a href="../lubricants/">Lubricants</a></li>
                     <li class="inner-navs stationary-menu"><a href="../stationary/">Stationary</a></li>
                     <li class="inner-navs car-menu"><a href="../car/">Car Accessories</a></li>

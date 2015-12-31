@@ -31,7 +31,7 @@ $target = "../../images/products/oil";
                 </fieldset>
                 <fieldset>
                     <label>
-                        Category (English):
+                        Category :
                     </label>
                     <select name="categoryeng">
                         <option value="">Select a Category</option>
@@ -41,6 +41,27 @@ $target = "../../images/products/oil";
                         <option value="Gear">Gear</option>
                         <option value="Engine">Engine</option>
                     </select> 
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Show Front:
+                    </label>
+                    <select name="showfront">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select> 
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in English :
+                    </label>
+                    <textarea name="edescription" rows="4" cols="45">Enter Description</textarea>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Desciption in Arabic :
+                    </label>
+                    <textarea name="adescription" rows="4" cols="45">Enter Description</textarea>
                 </fieldset>
                 <fieldset>
                     <label>
@@ -55,6 +76,7 @@ $target = "../../images/products/oil";
             </form>
         </div>
 <?php include_once "../footer.php"; ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');

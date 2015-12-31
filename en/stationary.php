@@ -23,7 +23,7 @@ and open the template in the editor.
             <div class="full-width pull-left">
                 <?php
                 include_once "../components/dbconnection.php";
-                $result = mysqli_query($con, "SELECT banimage FROM  banners WHERE name='lubricants' ORDER BY id DESC LIMIT 1");
+                $result = mysqli_query($con, "SELECT banimage FROM  banners WHERE name='stationary' ORDER BY id DESC LIMIT 1");
                         $target1 = "../images/banners/";
                          
                     while ($row = mysqli_fetch_array($result)) {
@@ -39,8 +39,8 @@ and open the template in the editor.
                         <?php
                         
 
-                        $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC");
-                        $target = "../images/products/oil/";
+                        $result = mysqli_query($con, "SELECT * FROM  stationary WHERE deleted='false' ORDER BY id DESC");
+                        $target = "../images/products/stationary/";
                         ?>
 
                         <?php

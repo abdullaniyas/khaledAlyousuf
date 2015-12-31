@@ -63,9 +63,9 @@ if(isset($_FILES["image"])){
         
      
 if($_FILES['image']['name']=="") {
-    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', eposition='".$eposition."', aposition='".$aposition."', edescription='".$edescription."', adescription='".$adescription."', email='".$email."' WHERE id='".$did."'" ;
+    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', eposition='".$eposition."', aposition='".$aposition."', edescription='". addslashes($edescription) ."', adescription='". addslashes($adescription) ."', email='".$email."' WHERE id='".$did."'" ;
 } else if($_FILES['image']['name']!=""){
-    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', image = '".$ili."',  eposition='".$eposition."', aposition='".$aposition."', edescription='".$edescription."', adescription='".$adescription."', email='".$email."' WHERE id='".$did."'" ;
+    $sql="UPDATE about SET category = '".$category."', ename = '".$ename."', aname = '".$aname."', image = '".$ili."',  eposition='".$eposition."', aposition='".$aposition."', edescription='". addslashes($edescription) ."', adescription='". addslashes($adescription) ."', email='".$email."' WHERE id='".$did."'" ;
 }
 
 

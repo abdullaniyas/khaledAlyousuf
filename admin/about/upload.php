@@ -61,7 +61,7 @@ if(isset($_POST["image"])){
      
         
 $sql="INSERT INTO about (category, ename, aname, eposition, aposition, email, edescription, adescription, image)
-        VALUES ('$category', '$ename', '$aname', '$eposition', '$aposition', '$email', '$edescription', '$adescription', '$ili')";
+        VALUES ('$category', '$ename', '$aname', '$eposition', '$aposition', '$email', '". addslashes($edescription) ."', '". addslashes($adescription) ."', '$ili')";
 
 
 if (!mysqli_query($con, $sql))

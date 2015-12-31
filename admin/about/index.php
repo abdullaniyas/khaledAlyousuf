@@ -12,6 +12,7 @@ include_once "../../components/dbconnection.php";
 $result = mysqli_query($con, "SELECT * FROM  about WHERE deleted='false' ORDER BY id ASC");
 $target = "../../images/about/";
 ?>
+
 <div id="paging_container2" class="show-container container"> 
     <aside>
         <a href="form.php" class="hide">ADD NEW</a>
@@ -70,8 +71,7 @@ $target = "../../images/about/";
 </div>
 
 <?php include_once "../footer.php"; ?>
-<script type="text/javascript" src="../js/jquery.pajinate.js"></script>
-<script src="../js/admin.js" language="javascript" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
