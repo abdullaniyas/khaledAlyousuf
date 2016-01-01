@@ -1,13 +1,15 @@
 <header class="header">
     <div class="main-header full-width pull-left brand-color1">
-        <div class="full-width header-container">
             <div class="logo pull-left">
                 <a href="index.php">
                     <img src="../images/logo.png" alt="logo" />
                 </a>
             </div>
+            <div class="mobile-menu">
+
+            </div>
             <nav>    
-                <ul class="width-1024">
+                <ul>
                     <li class="nav-items nav-home"><a href="index.php">Home</a></li>
                     <li class="nav-items nav-oil"><a href="lubricants.php">Lubricants</a></li>
                     <li class="nav-items nav-stationary"><a href="stationary.php">Stationary</a></li>
@@ -19,8 +21,7 @@
             </nav>
             <div class="pull-right language hide">
                 <h6><a href="../en/" class="lang-selected">English</a>&nbsp;|&nbsp;<a href="#" class="">Arabic</a></h6>
-            </div>
-        </div>    
+            </div> 
     </div>
     <div class="sub-header full-width pull-left">
         

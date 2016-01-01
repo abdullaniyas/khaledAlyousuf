@@ -29,12 +29,28 @@ $(document).ready(function(){
         'marginTop': +headerHeight+"px"
     })
     
-    /* To make the landing page fix the screen */
-    var x = $(window).height();
-    var y = x -headerHeight;
-    $('.landing-page').css({
-        'height': +y+"px"
+    var screenWidth = $( window ).width();
+    if (screenWidth > 600 ){
+        /* To make the landing page fix the screen */
+        var x = $(window).height();
+        var y = x -headerHeight;
+        $('.landing-page').css({
+            'height': +y+"px"
+        });
+    }
+    var menuclick = 0;
+    $('.mobile-menu').click(function (){
+        
+        if(menuclick == 0) {
+            $('nav').show();
+            menuclick = 1;
+        } else if(menuclick != 0) {
+            $('nav').hide();
+            menuclick = 0;
+        }
+        
     });
+
 });
 
 

@@ -72,14 +72,14 @@ and open the template in the editor.
                         <div class="carousel carousel1">
                             <ul>
                                 <?php
-                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
-                                $target = "../images/products/oil/";
+                                $result = mysqli_query($con, "SELECT * FROM  stationary WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
+                                $target = "../images/products/stationary/";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
                                         <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
-                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
                                         <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
@@ -106,14 +106,14 @@ and open the template in the editor.
                         <div class="carousel carousel2">
                             <ul>
                                 <?php
-                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
-                                $target = "../images/products/oil/";
+                                $result = mysqli_query($con, "SELECT * FROM  car WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
+                                $target = "../images/products/car/";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
                                         <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
-                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
                                         <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
@@ -141,14 +141,14 @@ and open the template in the editor.
                         <div class="carousel carousel3">
                             <ul>
                                 <?php
-                                $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
-                                $target = "../images/products/oil/";
+                                $result = mysqli_query($con, "SELECT * FROM  mobile WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
+                                $target = "../images/products/mobile/";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
                                         <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
-                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
                                         <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
@@ -192,7 +192,7 @@ and open the template in the editor.
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
                                         <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
-                                        <h3><a href="<?php //echo $row['categoryeng'];   ?>.php">Petrol<?php //echo $row['categoryeng'];   ?></a></h3>
+                                        <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
                                         <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
@@ -225,8 +225,8 @@ and open the template in the editor.
 
 
 
-<!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--        <script src="../script/jquery-1.11.1.js"></script>-->
         <script type="text/javascript" src="../script/alyousuf.js"></script>
         <script type="text/javascript" src="../script/home.js"></script>
         <script type="text/javascript" src="../script/jquery.jcarousellite.js"></script>

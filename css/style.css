@@ -256,3 +256,8 @@ body {
     background-color: #D1A73E;
     cursor: pointer;
 }
+@media screen and (max-width:1026px) {
+    #wowslider-container1 { 
+            min-width: 100%;
+    }
+}

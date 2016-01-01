@@ -16,8 +16,8 @@ include_once "../../components/dbconnection.php";
 include_once "../../components/dbconnection.php";
 
 $did = $_GET["id"];
-$target = "../../images/banners/";
-$result = mysqli_query($con, "SELECT * FROM banners WHERE id='".$did."'");
+$target = "../../images/gallery/";
+$result = mysqli_query($con, "SELECT * FROM gallery WHERE id='".$did."'");
 while($row = mysqli_fetch_array($result)) {
 ?>
 <div class="form-container">
@@ -27,26 +27,19 @@ while($row = mysqli_fetch_array($result)) {
                     <label>
                         Name
                     </label>
-                    <select name="name" >
-                        <option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
-                        <option value="slider">Slider</option>
-                        <option value="lubricants">Lubricants</option>
-                        <option value="stationary">Stationary</option>
-                        <option value="caracces">Car-Accessories</option>
-                        <option value="mobileacces">Mobile-Accessories</option>
-                    </select> 
+                    <input type="text" name="name" value="<?php echo $row['name']; ?>" required/>
                 </fieldset>
                 <hr />
                 <fieldset>
                     <label>
                         Old Image :
                     </label>
-                    <img  id="slected-img" src="<?php echo $target.$row['banimage'];?>" width="200" height="auto" /><div class="clear"></div>
+                    <img  id="slected-img" src="<?php echo $target.$row['image'];?>" width="200" height="auto" /><div class="clear"></div>
                     <label>
                         Upload a new image
                     </label>
                     
-                    <input type="file" name="banimage" id="image-selcted" value="<?php echo $row['image']; ?>" class="image-selected" />
+                    <input type="file" name="image" id="image-selcted" value="<?php echo $row['image']; ?>" class="image-selected" />
                     
                 </fieldset>
                 <hr />
@@ -61,10 +54,11 @@ while($row = mysqli_fetch_array($result)) {
         
         <?php include_once "../footer.php"; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".banner-menu").addClass('active');
+        $(".gallery-menu").addClass('active');
     });
 </script>
 </body>

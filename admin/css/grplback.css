@@ -275,7 +275,6 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #2a2a2a;
 }
-
 .login-container img {
     float: left;
     height: auto;
@@ -382,3 +381,15 @@ aside a:hover , fieldset a:hover , fieldset button:hover {
 .content {
     color: black;
 }
+.gallery li {
+    width: 22%;
+    height: 205px;
+}
+.gallery li img {
+    float: left;
+    width: 92%;
+    height: auto;
+    margin: 3% 4%;
+    max-height: 153px;
+}
+    

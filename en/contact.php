@@ -55,7 +55,7 @@ and open the template in the editor.
                                     <h3>Contact :</h3><input type="text" name="contact" id="contact" class="input required " placeholder="Contact Number" required/>
                                 </li>
                                 <li class="form-row">
-                                    <h3>Message :</h3><textarea name="descr" id="descr" class="input-text required " placeholder="Your Message" aria-invalid="false" aria-required="true" rows="3" cols="43" required></textarea>
+                                    <h3>Message :</h3><textarea name="descr" id="description" class="input-text required " placeholder="Your Message" aria-invalid="false" aria-required="true" rows="3" cols="43" required></textarea>
                                 </li>
                                 <li class="form-row">
                                     <h3></h3><button class="btn-submit" >Send</button>

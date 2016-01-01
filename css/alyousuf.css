@@ -296,7 +296,7 @@ header {
 .logo {
     height: 100%;
     margin: 0 0 0 5%;
-    width: 25%;
+    width: 200px;
     position: absolute;
 }
 .logo img {
@@ -308,18 +308,17 @@ header {
 }
 
 nav {
-    float: left;
-    width: 50%;
+    width: 75%;
     height: auto;
     z-index: 91;
-    left: 30%;
     bottom: 0;
     position: absolute;
+    right: 0;
 }
 nav ul {
-    margin: 0 auto;
-    height: 50px;
-    padding: 0px; 
+    padding: 0;
+    float: right;
+    margin: 0;
 }
 nav ul li {
     color: #fff;
@@ -346,6 +345,17 @@ nav ul li:hover {
 .nav-selected {
     color: #D9B13B;
     border-bottom: 3px solid #D9B13B;
+}
+.mobile-menu {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 10px;
+    background-image: url(../images/icons/menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
 }
 .language {
     position: absolute;
@@ -687,6 +697,7 @@ footer {
     height: 230px;
     border-top: 5px solid #D9B13B;
     overflow: hidden;
+    z-index: 10;
 }
 .footer-categories {
     width: 1024px;
@@ -2486,16 +2497,21 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     font-size: 36px;
     margin-top: 58px;
 }
+/* Gallery */
+
+.gallery-cont {
+    width: 1100px;
+}
 
 @media screen and (max-width:1180px) {
 .logo {
     margin: 0 0 0 0;
 }
 nav {
-    width: 65%;
+    width: 100%;
 }
 nav ul li {
-    padding: 20px 7px;
+    padding: 20px 12px;
 }
 .panels {
     width: 924px;
@@ -2511,9 +2527,23 @@ nav ul li {
     margin-right: 20px;
 }
 }
-@media screen and (max-width:1026px) {
+
+@media screen and (max-width:1106px) {
+    section .width-1100 {
+        width: 100%;
+    }
+    .gallery-cont {
+        width: 827px;
+    }
+    
+.category-products .seller-product {
+    margin: 25px 2%;
+    width: 29%;
+}
+}
+@media screen and (max-width:1040px) {
     nav ul li {
-        padding: 20px 6px;
+        padding: 20px 9px;
         font-size: 14px;
     }
     .footer-categories {
@@ -2529,15 +2559,101 @@ nav ul li {
 
 }
 @media screen and (max-width:926px) {
-    nav {
-        display: none;
-        width: 65%;
+    header {
+        min-width: 100%;
     }
+    nav {
+        width: 100%;
+        left: 0;
+        top: 100%;
+        bottom: default;
+        height: 100px;
+        display: none;
+    }
+    nav ul {
+        float: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    nav ul li {
+        width: 100%;
+        background-color: #000000;
+        font-size: 15px;
+        padding: 12px 9px;
+}
     .panels {
         width: 663px;
     }
     .slider-tab .carousel {
         width: 523px !important;
     }
+}
+@media screen and (max-width:826px) {
+    .landing-page {
+        min-height: 516px;
+    }
+    .category-products .seller-product {
+        margin: 20px 2%;
+        width: 45%;
+    }
+    .gallery-cont {
+        width: 553px;
+    }
+}
+@media screen and (max-width:726px) {
+    .landing-page {
+        min-height: 456px;
+    }
+}
+@media screen and (max-width:626px) {
+    .slider-tab .carousel {
+        width: 263px !important;
+    }
+    .panels {
+        width: 410px;
+    }
+    .title-head h3 {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:626px) {
+    .landing-page {
+        min-height: 416px;
+    }
     
+    .footer-categories > div {
+        width: 98%;
+    }
+    footer div div div {
+        border-left: 0 solid #fff !important;
+    }
+}
+@media screen and (max-width:570px) {
+    .gallery-cont {
+        width: 278px;
+    }
+}
+@media screen and (max-width:526px) {
+    .landing-page {
+        min-height: 376px;
+    }
+    .copy-right p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:486px) {
+    .category-products .seller-product {
+        margin: 15px 2%;
+        width: 96%;
+    }
+}
+@media screen and (max-width:426px) {
+    .landing-page {
+        min-height: 316px;
+    }
+    .copy-right div ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
 }
