@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2015 at 09:56 AM
+-- Generation Time: Jan 01, 2016 at 04:22 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -119,6 +119,55 @@ INSERT INTO `car` (`id`, `ename`, `aname`, `categoryeng`, `showfront`, `edescrip
 (11, 'Tyre', 'ØµÙˆØ±', 'wheels', 'yes', 'Tyre', 'ØµÙˆØ±', 'tyre2.png', 'false', '2015-12-31 05:26:11'),
 (12, 'Wheel Cap', 'Ø¹Ø¬Ù„Ø© ÙƒØ§Ø¨', 'wheels', 'yes', 'Wheel Cap', 'Ø¹Ø¬Ù„Ø© ÙƒØ§Ø¨', 'wheel-cap.png', 'false', '2015-12-31 05:26:39'),
 (13, 'Wheel Cap', 'Ø¹Ø¬Ù„Ø© ÙƒØ§Ø¨', 'wheels', 'no', 'Wheel Cap', 'Ø¹Ø¬Ù„Ø© ÙƒØ§Ø¨', 'wheel-cap2.png', 'false', '2015-12-31 05:27:01');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contact` varchar(255) NOT NULL,
+  `descr` varchar(1000) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `contact`, `descr`, `date`) VALUES
+(12, 'ververv', 'niyas@ads.com', '9876543210', 'vervewrvwerv', '2016-01-01 15:19:26'),
+(13, 'dsdvv', 'evrvervve@hdbc.com', '987654345', 'svfvv', '2016-01-01 15:19:43');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `deleted` varchar(255) NOT NULL DEFAULT 'false',
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`id`, `name`, `image`, `deleted`, `date`) VALUES
+(1, 'one', 'IMG-20151215-WA0000.jpg', 'false', '2016-01-01 13:39:14'),
+(2, 'two', 'IMG-20151215-WA0001.jpg', 'false', '2016-01-01 13:45:48'),
+(3, '12w', 'IMG-20151215-WA0002.jpg', 'false', '2016-01-01 13:45:58'),
+(4, '43424', 'IMG-20151215-WA0003.jpg', 'false', '2016-01-01 13:46:07'),
+(5, '2r24', 'IMG-20151215-WA0007.jpg', 'false', '2016-01-01 13:46:14'),
+(6, 'fvfd', 'IMG-20151215-WA0008.jpg', 'false', '2016-01-01 13:46:20');
 
 -- --------------------------------------------------------
 
@@ -285,6 +334,18 @@ ALTER TABLE `car`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `lubricants`
 --
 ALTER TABLE `lubricants`
@@ -327,6 +388,16 @@ ALTER TABLE `banners`
 --
 ALTER TABLE `car`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT for table `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `lubricants`
 --
