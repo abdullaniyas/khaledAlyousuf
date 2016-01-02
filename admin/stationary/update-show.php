@@ -43,7 +43,7 @@ while($row = mysqli_fetch_array($result)) {
                         <option value="pen">Pen</option>
                         <option value="book">Book</option>
                         <option value="eraser">Eraser</option>
-                        <option value="sharpner">Sharpener</option>
+                        <option value="sharpener">Sharpener</option>
                         <option value="scale">Scale</option>
                     </select>
                 </fieldset>

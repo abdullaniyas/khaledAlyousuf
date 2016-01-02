@@ -1,7 +1,7 @@
 <footer class="brand-color1 brand-strip">
 <!--    <div class="globe"></div>-->
     <div class="footer-categories">
-        <div class="width-23 pull-left offset-1">
+        <div class="width-27 pull-left offset-1">
             <div>
                 <ul>
                     <li><p>CONTACT US</p></li>
@@ -36,7 +36,7 @@
                 </ul>
             </div>
         </div>
-        <div class="width-27 pull-left offset-1">
+        <div class="width-23 pull-left offset-1">
             <div class="connect border-left">
                 <ul>
                     <li><p>Company</p></li>

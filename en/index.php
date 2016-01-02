@@ -10,8 +10,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
-        <!-- Slider -->
-        <script type="text/javascript" src="../script/modernizr.custom.28468.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- Slider ends -->
@@ -225,8 +223,9 @@ and open the template in the editor.
 
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--        <script src="../script/jquery-1.11.1.js"></script>-->
+        <script type="text/javascript" src="../script/modernizr.custom.28468.js"></script>
         <script type="text/javascript" src="../script/alyousuf.js"></script>
         <script type="text/javascript" src="../script/home.js"></script>
         <script type="text/javascript" src="../script/jquery.jcarousellite.js"></script>

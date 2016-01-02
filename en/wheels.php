@@ -10,8 +10,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/alyousuf.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-        <!-- Slider ends -->
     </head>
     <body>
 
@@ -41,6 +39,7 @@ and open the template in the editor.
 
                         $result = mysqli_query($con, "SELECT * FROM  car WHERE deleted='false' and categoryeng='wheels' ORDER BY id DESC");
                         $target = "../images/products/car/";
+                        $product = "cproduct.php?id=";
                         ?>
 
                         <?php
@@ -48,11 +47,11 @@ and open the template in the editor.
                             ?>
 
                             <div class="seller-product pull-left">
-                                <a href="#" >
+                                <a href="<?php echo $product . $row['id']; ?>" >
                                     <img src="<?php echo $target . $row['image']; ?>" alt="image" height="auto" width="100%"/>
                                 </a>
                                 <h3><a href="<?php echo $row['categoryeng']; ?>.php"><?php echo $row['categoryeng']; ?></a></h3>
-                                <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                <h2><a href="<?php echo $product . $row['id']; ?>" ><?php echo $row['ename']; ?></a></h2>
                             </div>
 
 
@@ -71,7 +70,7 @@ and open the template in the editor.
 
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--        <script src="../script/jquery-1.11.1.js"></script>-->
         <script type="text/javascript" src="../script/alyousuf.js"></script>
         <script type="text/javascript" src="../script/modernizr.custom.28468.js"></script>

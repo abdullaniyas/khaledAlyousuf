@@ -308,12 +308,12 @@ header {
 }
 
 nav {
-    width: 75%;
+    width: 70%;
     height: auto;
     z-index: 91;
     bottom: 0;
     position: absolute;
-    right: 0;
+    right: 5%;
 }
 nav ul {
     padding: 0;
@@ -1944,13 +1944,15 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 .widget .mid {
     float: left;
     height: 350px;
-    margin: 20px 15% 10px;
+    margin: 50px 15% 10px;
     width: 350px;
     overflow: hidden;
 }
 .widget .mid img {
-    width: 100%;
+    border: 5px solid #d9b13b;
     height: auto;
+    padding: 5px;
+    width: 94%;
 }
 .carousel-prod {
     width: 344px !important;
@@ -1968,6 +1970,9 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     width: 100%;
     height: 100px;
 }
+.product-page {
+    width: 1024px;
+}
 .product-descr {
     background-color: rgba(28, 80, 93, 0.6)
 }
@@ -1982,31 +1987,34 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     text-align: center;
 }
 .product-head h3{
-    margin: 10px auto 0;
+    margin: 10px auto;
 }
 .product-head h2 {
     margin: 0 auto 10px;
 }
-.product-body form {
-    width: 337px;
-    margin: 40px auto 20px;
+.product-body {
+    margin: 30px 0 50px 0;
+    height: 300px;
 }
-.product-body form select {
-    background-color: transparent;
-    border: 1px solid #fff;
-    height: 25px;
-    width: 147px;
-    color: #fff;
-}
-.product-body form p {
-    color: #fff;
+.product-body h4 {
+    color: #1a1a1a;
+    float: left;
     font-size: 18px;
-    margin: 2px 20px 8px auto;
-    text-align: right;
+    font-weight: 600;
+    margin: 0 18px 0 0;
 }
-.product-body form button {
-    color:#1C505D;
-    margin-top: 15px;
+.product-body p {
+    color: #2a2a2a;
+    margin: 3px 5px 20px 0;
+    text-transform: capitalize;
+}
+.product-body p a {
+    text-decoration: none;
+    color: inherit;
+}
+.product-body p a:hover {
+    text-decoration: none;
+    color: #d9b13b;
 }
 .product-footer p {
     color: #fff;
@@ -2546,6 +2554,9 @@ nav ul li {
         padding: 20px 9px;
         font-size: 14px;
     }
+    .product-page {
+        width: 100%;
+    }
     .footer-categories {
         width: 100%;
     }
@@ -2600,10 +2611,30 @@ nav ul li {
     .gallery-cont {
         width: 553px;
     }
+    .widget .mid {
+        margin: 76px 7% 10px;
+        height: auto;
+        width: 300px;
+    }
+    .address-contact {
+        bottom: 10px;
+        left: 20px;
+        padding: 5px;
+        top: auto;
+    }
 }
 @media screen and (max-width:726px) {
     .landing-page {
         min-height: 456px;
+    }
+    .product-page .width-50 {
+        width: 100%;
+    }
+    .widget .mid {
+        float: none;
+        height: auto;
+        margin: 26px auto 10px;
+        width: 350px;
     }
 }
 @media screen and (max-width:626px) {
@@ -2616,8 +2647,9 @@ nav ul li {
     .title-head h3 {
         font-size: 32px;
     }
-}
-@media screen and (max-width:626px) {
+    .styled {
+        width: 100%;
+    }
     .landing-page {
         min-height: 416px;
     }
@@ -2641,6 +2673,20 @@ nav ul li {
     .copy-right p {
         font-size: 10px;
     }
+    .styled fieldset ol, .styled fieldset ol li {
+        list-style: outside none none;
+        padding: 0;
+    }
+    .input, .input-text {
+        width: 100%;
+    }
+    
+    .address-contact h5 {
+        display: none;
+    }
+    .styled .form-row h3 {
+        text-align: left;
+    }
 }
 @media screen and (max-width:486px) {
     .category-products .seller-product {
@@ -2651,6 +2697,13 @@ nav ul li {
 @media screen and (max-width:426px) {
     .landing-page {
         min-height: 316px;
+    }
+    
+    .widget .mid {
+        float: none;
+        height: auto;
+        margin: 0;
+        width: 100%;
     }
     .copy-right div ul {
         margin-left: 0;

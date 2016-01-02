@@ -29,11 +29,8 @@ and open the template in the editor.
                             <li>Maryam Tower, Room No 203,</li>
                             <li>Near Golden Coffee Shop,</li>
                             <li>Nuimia, Ajman, UAE - 7774</li>  
+                            <li>067438427</li>
                         </ul>
-                        <h5>Phone</h5>
-                            <ul>
-                                <li>067438427</li>
-                            </ul>
                     </div>
                 </div>
                 <div class="full-width pull-left height-300 contact-form">
@@ -76,7 +73,7 @@ and open the template in the editor.
 
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--        <script src="../script/jquery-1.11.1.js"></script>-->
         <script language="javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&v=3"></script>
         <script type="text/javascript" src="../script/alyousuf.js"></script>

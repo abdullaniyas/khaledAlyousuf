@@ -39,15 +39,9 @@ and open the template in the editor.
 
 
 
-<!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <script src="../script/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--        <script src="../script/jquery-1.11.1.js"></script>-->
         <script type="text/javascript" src="../script/alyousuf.js"></script>
-<!--        <script type="text/javascript" src="../js/jquery.jcarousellite.js"></script>
-        <script type="text/javascript" src="../js/wowslider.js"></script>
-        <script type="text/javascript" src="../js/script.js"></script>-->
-
-        <script type="text/javascript">
-
-        </script>
+        <script type="text/javascript" src="../js/modernizr.custom.28468.js"></script>
     </body>
 </html>
