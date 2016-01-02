@@ -72,13 +72,14 @@ and open the template in the editor.
                                 <?php
                                 $result = mysqli_query($con, "SELECT * FROM  stationary WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
                                 $target = "../images/products/stationary/";
+                                $product1 = "sproduct.php?id=";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
-                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <a href="<?php echo $product1 . $row['id']; ?>"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
                                         <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
-                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                        <h2><a href="<?php echo $product1 . $row['id']; ?>" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
                                 <?php } ?>
@@ -106,13 +107,14 @@ and open the template in the editor.
                                 <?php
                                 $result = mysqli_query($con, "SELECT * FROM  car WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
                                 $target = "../images/products/car/";
+                                $product2 = "cproduct.php?id=";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
-                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <a href="<?php echo $product2 . $row['id']; ?>"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
                                         <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
-                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                        <h2><a href="<?php echo $product2 . $row['id']; ?>" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
                                 <?php } ?>
@@ -141,13 +143,14 @@ and open the template in the editor.
                                 <?php
                                 $result = mysqli_query($con, "SELECT * FROM  mobile WHERE deleted='false' and showfront='yes' ORDER BY id DESC LIMIT 8");
                                 $target = "../images/products/mobile/";
+                                $product3 = "mproduct.php?id=";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
-                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <a href="<?php echo $product3 . $row['id']; ?>"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
                                         <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
-                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                        <h2><a href="<?php echo $product3 . $row['id']; ?>" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
                                 <?php } ?>
@@ -185,13 +188,14 @@ and open the template in the editor.
                                 <?php
                                 $result = mysqli_query($con, "SELECT * FROM  lubricants WHERE deleted='false' ORDER BY id DESC LIMIT 6");
                                 $target = "../images/products/oil/";
+                                $product4 = "lproduct.php?id=";
                                 ?>
 
                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                     <li>
-                                        <a href="#"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
+                                        <a href="<?php echo $product4 . $row['id']; ?>"><img src="<?php echo $target . $row['image']; ?>" alt="Color Pencil" /></a>
                                         <h3><a href="<?php echo $row['categoryeng'];   ?>.php"><?php echo $row['categoryeng'];   ?></a></h3>
-                                        <h2><a href="#" ><?php echo $row['ename']; ?></a></h2>
+                                        <h2><a href="<?php echo $product4 . $row['id']; ?>" ><?php echo $row['ename']; ?></a></h2>
                                     </li>
 
                                 <?php } ?>
