@@ -59,7 +59,7 @@
         <ul>
             <li><a href="policy.php">Policy</a></li>
             <li><a href="terms-and-conditions.php">Terms and conditions</a></li>
-            <li><a href="faq.php">FAQ</a></li>
+            <li><a href="../company-profile.pdf" target="_blank">Company Profile</a></li>
         </ul>
     </div>
     <div class="pull-right copy-right-text">

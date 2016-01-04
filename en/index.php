@@ -56,7 +56,6 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-            <div class="scroller_anchor" style="position: absolute; bottom: 30px; width: 100%; height: 10px;"></div>
         </div>
         <section>
             <div class="section-home panels stationary-comp">

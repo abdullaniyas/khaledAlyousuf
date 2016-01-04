@@ -83,19 +83,6 @@ and open the template in the editor.
 
                             <?php } ?>
                         </div>
-                        <div class="team-members">
-                            <?php
-                            $result = mysqli_query($con, "SELECT * FROM  about WHERE category='team3' and deleted='false' ORDER BY id DESC LIMIT 1");
-                            $target1 = "../images/about/";
-                            while ($row = mysqli_fetch_array($result)) {
-                                ?>
-                                <img src="<?php echo $target1 . $row['image']; ?>" alt="Sponosor" />
-                                <h3><?php echo $row['ename']; ?></h3>
-                                <h5><?php echo $row['eposition']; ?></h5>
-                                <p><?php echo $row['email']; ?></p>
-
-                            <?php } ?>
-                        </div>
                     </div>
                 </div>
             </div>

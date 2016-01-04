@@ -271,7 +271,7 @@ button {
     float:left;
     width: 100%;
     height: auto;
-    min-height: 600px;
+    max-height: 800px;
 }
 header {
     width: 100%;
@@ -2206,7 +2206,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 }
 .team-members {
     float: left;
-    width: 33.3333%;
+    width: 50%;
 }
 .team-members img {
     width: 80%;
