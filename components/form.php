@@ -24,7 +24,7 @@ if(isset($_POST["descr"])){
 $sql="INSERT INTO  contact (name, email, contact, descr)
         VALUES ('$name', '$email', '$contact', '". addslashes($descr) ."')";
 
-$to = "agesdatasolutions@gmail.com";
+$to = "abdullaniyasm@gmail.com";
 $subject = "Website Contact: ".$name;
 $from = "website";
 $message =

@@ -10,9 +10,9 @@ include_once "../header.php";
 include_once "../../components/dbconnection.php";
 ?>
 <div id="paging_container2" class="show-container container"> 
-    <div class="clear"></div>
+    <div class="margin-bottom-4p pull-left"></div>
     <aside>
-        <a href="form.php">ADD NEW</a>
+        
     </aside>
     <div class="clear"></div>
 
@@ -26,13 +26,15 @@ echo "<thead>";
 
 echo "<th>ID</th>";
 
-echo "<th>Name<br />(English)</th>";
+echo "<th>Name</th>";
 
-echo "<th>Email<br />(Arabic)</th>";
+echo "<th>Email</th>";
 
 echo "<th>Contact</th>";
 
-echo "<th>Message<br />(English)</th>";
+echo "<th>Message</th>";
+
+echo "<th>Date</th>";
 
 echo "</thead>";
 
@@ -49,6 +51,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['email'] . "</td>";
   echo "<td>" . $row['contact'] . "</td>";
   echo "<td>" . $row['descr'] . "</td>";
+  echo "<td>" . $row['date'] . "</td>";
   echo "</tr>";
   }
  	 	
@@ -87,7 +90,7 @@ echo "</div>";
 <script type="text/javascript">
     $(document).ready(function(){
         $(".inner-navs").removeClass('active');
-        $(".lubricants-menu").addClass('active');
+        $(".contact-menu").addClass('active');
     });
 </script>
 </body>

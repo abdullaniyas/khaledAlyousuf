@@ -55,6 +55,7 @@
                     <li class="inner-navs car-menu"><a href="../car/">Car Accessories</a></li>
                     <li class="inner-navs mobile-menu"><a href="../mobile/">Mobile Accessories</a></li>
                     <li class="inner-navs about-menu"><a href="../about/">About</a></li>
+					<li class="inner-navs contact-menu"><a href="../contact/">Contact</a></li>
                     <li class="inner-navs gallery-menu"><a href="../gallery/">Gallery</a></li>
                     <li class="inner-navs"><a href="../logout.php">Log Out</a></li>
                 </ul>
